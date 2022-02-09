@@ -179,7 +179,7 @@ a {
 ================================================== */
 
 header {
-	background: #151515 url(../images/intro-bg.jpg) no-repeat center;
+	background: #151515 url(images/intro-bg.jpg) no-repeat center;
 	background-size: cover;
 	background-attachment: fixed;
 	width: 100%;
