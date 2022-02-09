@@ -35,7 +35,7 @@ const txtAnim = document.querySelector("#typeWriter")
 
 new Typewriter (txtAnim, {
   loop: true,
-  delay:90,
+  delay:80,
   deleteSpeed: 50
 })
 
