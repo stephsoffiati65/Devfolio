@@ -35,20 +35,17 @@ const txtAnim = document.querySelector("#typeWriter")
 
 new Typewriter (txtAnim, {
   loop: true,
-  delay:90,
-  deleteSpeed: 50
+  delay: 80,
+  deleteSpeed: 60,
 })
-
-
 .typeString ('<strong>FRONT-END</strong>')
-.pauseFor(1000)
+.pauseFor(300)
 .deleteChars(9)
 .typeString('<strong>WORDPRESS</strong>')
-.pauseFor(1000)
+.pauseFor(300)
 .deleteChars(9)
 .typeString('<strong>FREELANCE</strong>')
-.pause(3000)
+.pauseFor(300)
 .deleteChars(9)
-.pause(3000)
 
 .start()

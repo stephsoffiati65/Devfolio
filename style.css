@@ -249,11 +249,6 @@ path{
   text-align: center;
 }
 
-#photo p{
-  font-family: "Poppins";
-}
-
-
 #career {
  display: flex;
  justify-content: space-around;
@@ -270,10 +265,11 @@ path{
 
 #about p{
   text-align: center;
-  margin: 0 auto 60px auto;
+  margin: 10px auto;
   letter-spacing: 3px;
   line-height: 25px;
   font-size: 20px;
+  padding: 20px;
 } 
 
 #career ul{
