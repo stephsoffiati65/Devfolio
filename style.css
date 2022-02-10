@@ -67,6 +67,10 @@ a {
   color: #058f00;
 }
 
+.none{
+  display: none;
+}
+
 /* Burger navigation
 ================================================== */
 
@@ -181,10 +185,8 @@ a {
 header {
 	background: url(images/intro-bg.jpg) no-repeat center;
 	background-size: cover;
-	background-attachment: fixed;
 	width: 100%;
 	height: 100%;
-	min-height: 1000px;
   padding-bottom: 30px;
 	text-align: center;
 }
@@ -212,6 +214,7 @@ header {
   margin: auto;
   margin-top: 340px;
   width: 20%;
+  min-width: 400px;
   text-align: center;
 }
 
@@ -245,16 +248,18 @@ path{
 /* A propos
 ================================================== */
 
-#photo{
-  text-align: center;
-}
-
 #career {
  display: flex;
  justify-content: space-around;
+ align-items: center;
  margin: 0 auto 50px auto;
  font-size: 22px;
  line-height: 35px
+}
+
+#photo{
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 #career img{
@@ -263,30 +268,16 @@ path{
   border-radius: 50%;
 }
 
-#about p{
-  text-align: center;
-  margin: 10px auto;
-  letter-spacing: 3px;
-  line-height: 25px;
-  font-size: 20px;
-  padding: 20px;
-} 
 
 #career ul{
   list-style-type: none;
   text-align: left;
-  margin-bottom: 20px;
+  margin: 50px auto;
   padding: 0 2%; 
 }
 
-#career ul:nth-child(3) {
-  border-left: 1px solid #5c5b5b;
-  padding-left: 10px; 
-}
-
-#career ul:nth-child(1) {
-  border-right: 1px solid #5c5b5b;
-  padding-left: 10px;
+#career ul:nth-child(3){
+ margin-bottom: 100px;
 }
 
 #career ul li{
@@ -295,14 +286,34 @@ path{
   margin-bottom: 20px;
 }
 
-.icone-background{
- 
+.icon-background{
   background: #058f00;
   border-radius: 50%;
   text-align: center;
   color: #FFFFFF;
   padding: 10px;
   margin: 0 20px;
+}
+
+.bigIcon{
+  text-align: center;
+  margin: 50px auto;
+  display: none;
+}
+
+.bigIcon span{
+  background: #058f00;
+  border-radius: 50%;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 10px;
+  font-size: 40px;
+}
+
+.hrResp{
+  width:900px; 
+  margin: auto;
+  display: none;
 }
 
 .hrAbout {
@@ -321,15 +332,17 @@ path{
 }
 
 #container{
-  padding: 4em 3em;
   position: relative;
   border-radius: 20px;
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 50px;
 }
 
 .pourcent {
   position:relative;
+  margin-bottom: 50px;
 }
 
 .level{
@@ -348,7 +361,7 @@ path{
 }
 
 .level circle:nth-child(1){
-  stroke: #5c5b5b;
+  stroke: #cacaca;
   stroke-dashoffset: 0;
 }
 
@@ -366,23 +379,19 @@ path{
   position: absolute;
   top: 50%;
   left: 4%;
-  transform: translate(-50%, -50%);
   font-size: 2em;
   font-weight: 500;
-  color:#058f00;
+  color:white;
+  text-shadow: 3px 3px 3px black;
 }
 
-.langage img{
-  width: 80px;
-}
-
-.icone {
+.icon {
   position: absolute;
   top: 40%;
   left: 50%;
   transform: translate(-50%,-50%);
 }
-.icone path:nth-child(1) {
+.icon path:nth-child(1) {
   stroke-dasharray: 2333px;
   stroke-dashoffset: 2333px;
   animation: anim 10s ease forwards;

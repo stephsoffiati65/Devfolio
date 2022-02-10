@@ -1,0 +1,109 @@
+
+/* Burger navigation
+================================================== */
+
+/* Header
+================================================== */
+@media (max-width: 850px){
+    #dev{
+      display: block;
+    }
+
+    .paragraph{
+        line-height: 30px;
+    }
+}
+
+@media (max-width: 740px){
+    svg{
+      width: 500px;
+    }
+}
+
+@media (max-width: 550px){
+    svg{
+      width: 400px;
+    }
+}
+
+@media (max-width: 480px){
+    svg{
+      width: 330px;
+    }
+
+    .paragraph{
+        letter-spacing: 0;
+        font-size: 12px;
+    }
+
+    #name{
+        padding-top: 45%;
+    }
+
+    .burgerIcon img, .xIcon img {
+        width: 40px;
+    }
+}
+
+/* A propos
+================================================== */
+
+@media (max-width: 1738px){
+    #career{
+        display: block;
+        width: 100%;
+        margin: auto;
+    }
+
+    .hrResp{
+        display: block;
+    }
+       
+}
+
+@media (max-width: 1370px){
+  
+    #career ul li{
+        
+       }
+       
+}
+
+@media (max-width: 950px){
+    .hrResp{
+        width: 500px;
+    }
+}
+
+
+@media (max-width: 685px){
+    .icon-background{
+        display: none;
+    }
+
+    .hrResp{
+        display: none;
+    }
+
+    .bigIcon{
+        display: block;
+    }
+
+    #career ul li{
+        font-size: 18px;
+    }
+
+}
+
+/* Compétences
+================================================== */
+
+@media (max-width: 1450px){
+    nav{
+        width: 780px;
+    }
+
+    nav a , .btn-grad{
+        font-size: 20px;
+    }
+}

@@ -38,13 +38,13 @@ new Typewriter (txtAnim, {
   delay: 80,
   deleteSpeed: 60,
 })
-.typeString ('<strong>FRONT-END</strong>')
+.typeString ('<strong>FRONT-END ✅</strong>')
 .pauseFor(300)
 .deleteChars(9)
-.typeString('<strong>WORDPRESS</strong>')
+.typeString('<strong>WORDPRESS ✅</strong>')
 .pauseFor(300)
 .deleteChars(9)
-.typeString('<strong>FREELANCE</strong>')
+.typeString('<strong>FREELANCE ✅</strong>')
 .pauseFor(300)
 .deleteChars(9)
 
