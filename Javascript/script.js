@@ -51,22 +51,22 @@ new Typewriter (txtAnim, {
 
 //////////////////////////////////////
 
-let a = document.querySelector('#burger li a')
+// let a = document.querySelector('#burger li a')
 
-a.addEventListener('click', () => { 
+// a.addEventListener('click', () => { 
 
-menu.style.zIndex = ("-10");
+// menu.style.zIndex = ("-10");
 
   
-    // if (burger.classList.contains("responsive")) {
-    //     burger.classList.remove("responsive");
-    // } else {
-    //     burger.classList.add("responsive");
-    //     nav.style.width = ("100%");
-    //     rectNav.style.width = ("100%");
-    //     iconX.style.display = ("block");
-    //     iconX.style.fontSize = ("50px");
-    //     iconX.style.color = ("#27282a");
-    //     iconI.style.display = ("none");
-    //     }
-})
+//     // if (burger.classList.contains("responsive")) {
+//     //     burger.classList.remove("responsive");
+//     // } else {
+//     //     burger.classList.add("responsive");
+//     //     nav.style.width = ("100%");
+//     //     rectNav.style.width = ("100%");
+//     //     iconX.style.display = ("block");
+//     //     iconX.style.fontSize = ("50px");
+//     //     iconX.style.color = ("#27282a");
+//     //     iconI.style.display = ("none");
+//     //     }
+// })

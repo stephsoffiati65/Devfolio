@@ -55,6 +55,10 @@
     .burgerIcon img, .xIcon img {
         width: 40px;
     }
+
+    #networks{
+        margin-top: 300px;
+      }
 }
 
 /* A propos
@@ -113,11 +117,11 @@
         display: block;
        
     }
- 
+
     #career ul li{
-    margin-left: 20%;
-    font-size: 17px;
-     }
+    margin-left: 20px;
+    font-size: 21px;
+    }
         
  }
 
