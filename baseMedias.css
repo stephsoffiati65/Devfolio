@@ -2,10 +2,16 @@
 /* Burger navigation
 ================================================== */
 
+@media (max-width: 1420px){
+    #burger li {
+        width: 100%; 
+    }
+}
+
 /* Header
 ================================================== */
 @media (max-width: 850px){
-    #dev{
+    .jumpDev{
       display: block;
     }
 
@@ -55,17 +61,13 @@
         margin: auto;
     }
 
+    #career ul li{
+        margin-left: 15%;
+    }
+
     .hrResp{
         display: block;
     }
-       
-}
-
-@media (max-width: 1370px){
-  
-    #career ul li{
-        
-       }
        
 }
 
@@ -73,10 +75,15 @@
     .hrResp{
         width: 500px;
     }
+
+    #career ul li{
+        margin-left: 15%;
+        font-size: 19px;
+    }
 }
 
 
-@media (max-width: 685px){
+@media (max-width: 700px){
     .icon-background{
         display: none;
     }
@@ -90,10 +97,23 @@
     }
 
     #career ul li{
-        font-size: 18px;
+        margin-left: 15%;
     }
-
 }
+
+@media (max-width: 600px){
+  
+    .jumpAbout{
+        display: block;
+       
+    }
+ 
+    #career ul li{
+    margin-left: 20%;
+    font-size: 17px;
+     }
+        
+ }
 
 /* Compétences
 ================================================== */
