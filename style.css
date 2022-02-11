@@ -283,22 +283,41 @@ path{
   margin-bottom: 20px;
 }
 
-.icon-background{
+.icon-graduation{
   background: #058f00;
   border-radius: 50%;
-  text-align: center;
   color: #FFFFFF;
   padding: 10px;
   margin: 0 20px;
+  height:40px; 
+width: 40px
 }
 
-.bigIcon{
+.icon-briefcase{
+  background: #058f00;
+  border-radius: 50%;
+  color: #FFFFFF;
+  padding: 10px 12.5px;
+  margin: 0 20px;
+
+}
+
+.bigIcon-briefcase , .bigIcon-graduation{
   text-align: center;
   margin: 50px auto;
   display: none;
 }
 
-.bigIcon span{
+.bigIcon-briefcase span{
+  background: #058f00;
+  border-radius: 50%;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 10px 13px;
+  font-size: 40px;
+}
+
+.bigIcon-graduation span{
   background: #058f00;
   border-radius: 50%;
   text-align: center;
@@ -401,7 +420,6 @@ path{
       stroke-dashoffset: 0;
   }
 }
-
 
 
 

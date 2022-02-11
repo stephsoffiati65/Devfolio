@@ -10,7 +10,7 @@
 
 @media (max-width: 500px){
     #burger li a{
-        font-size: 50px; 
+        font-size: 40px; 
     }
 }
 
@@ -57,7 +57,7 @@
     }
 
     #networks{
-        margin-top: 300px;
+        margin-top: 250px;
       }
 }
 
@@ -94,7 +94,11 @@
 
 
 @media (max-width: 700px){
-    .icon-background{
+    .icon-graduation{
+        display: none;
+    }
+
+    .icon-briefcase{
         display: none;
     }
 
@@ -102,7 +106,11 @@
         display: none;
     }
 
-    .bigIcon{
+    .bigIcon-graduation{
+        display: block;
+    }
+
+    .bigIcon-briefcase{
         display: block;
     }
 
