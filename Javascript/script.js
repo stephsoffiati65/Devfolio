@@ -6,6 +6,14 @@
         let ham = document.querySelector(".ham")
         let xIcon = document.querySelector(".xIcon")
         let burgerIcon = document.querySelector(".burgerIcon")
+        let a1 = document.querySelector("#a1")
+        let a2 = document.querySelector("#a2")
+        let a3 = document.querySelector("#a3")
+        let a4 = document.querySelector("#a4")
+        let a5 = document.querySelector("#a5")
+        let a6 = document.querySelector("#a6")
+
+
       
         ham.addEventListener("click", toggleMenu)
       
@@ -20,6 +28,55 @@
             burgerIcon.style.display = "none";
           }
         }
+
+        a1.addEventListener("click", toggleLink)
+
+        function toggleLink() {
+            menu.classList.remove("showMenu");
+            xIcon.style.display = "none";
+            burgerIcon.style.display = "block";
+        }
+
+        a2.addEventListener("click", toggleLink)
+
+        function toggleLink() {
+            menu.classList.remove("showMenu");
+            xIcon.style.display = "none";
+            burgerIcon.style.display = "block";
+        }
+
+        a3.addEventListener("click", toggleLink)
+
+        function toggleLink() {
+            menu.classList.remove("showMenu");
+            xIcon.style.display = "none";
+            burgerIcon.style.display = "block";
+        }
+
+        a4.addEventListener("click", toggleLink)
+
+        function toggleLink() {
+            menu.classList.remove("showMenu");
+            xIcon.style.display = "none";
+            burgerIcon.style.display = "block";
+        }
+
+        a5.addEventListener("click", toggleLink)
+
+        function toggleLink() {
+            menu.classList.remove("showMenu");
+            xIcon.style.display = "none";
+            burgerIcon.style.display = "block";
+        }
+
+        a6.addEventListener("click", toggleLink)
+
+        function toggleLink() {
+            menu.classList.remove("showMenu");
+            xIcon.style.display = "none";
+            burgerIcon.style.display = "block";
+        }
+
 
 // Animation SVG
 // ==================================================
@@ -51,22 +108,12 @@ new Typewriter (txtAnim, {
 
 //////////////////////////////////////
 
-// let a = document.querySelector('#burger li a')
+// const ham = document.querySelector('#burger');
 
-// a.addEventListener('click', () => { 
 
-// menu.style.zIndex = ("-10");
 
-  
-//     // if (burger.classList.contains("responsive")) {
-//     //     burger.classList.remove("responsive");
-//     // } else {
-//     //     burger.classList.add("responsive");
-//     //     nav.style.width = ("100%");
-//     //     rectNav.style.width = ("100%");
-//     //     iconX.style.display = ("block");
-//     //     iconX.style.fontSize = ("50px");
-//     //     iconX.style.color = ("#27282a");
-//     //     iconI.style.display = ("none");
-//     //     }
+// ham.addEventListener('click', () => { 
+     
+//       ham.style.display = ("block");
+    
 // })
