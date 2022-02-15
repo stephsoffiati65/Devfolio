@@ -106,14 +106,3 @@ new Typewriter (txtAnim, {
 
 .start()
 
-//////////////////////////////////////
-
-// const ham = document.querySelector('#burger');
-
-
-
-// ham.addEventListener('click', () => { 
-     
-//       ham.style.display = ("block");
-    
-// })
