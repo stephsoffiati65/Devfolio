@@ -32,13 +32,13 @@ h2 {
 
 a {
   text-decoration: none;
-  color: white;
+  color: #ebebeb;
   font-family:"Poppins";
   font-weight: bold;
 }
 
 .paragraph{
-  color: white;
+  color: #ebebeb;
   letter-spacing: 3px;
   margin-top: 10px;
 }
@@ -206,11 +206,11 @@ header {
   font-size: 12px;
   letter-spacing: 5px;
   background: transparent;
-  border: 3px solid #a3a2a2;
+  border: 1px solid #ebebeb;
 }
 
 .classic:hover{
-  border: 3px solid #B0F2B6;
+  border: 1px solid #B0F2B6;
 }
 
 #networks{
@@ -249,10 +249,6 @@ path{
 
 /* A propos
 ================================================== */
-
-#about{
-  background-color: #a3a2a2;
-}
 
 #career {
  display: flex;
@@ -346,7 +342,7 @@ path{
 /* Compétences
 ================================================== */
 
-#competences{
+#about{
   background: url(images/bg.png) no-repeat center;
 	background-size: cover;
 	width: 100%;
@@ -594,7 +590,7 @@ path{
   left: 4%;
   font-size: 2em;
   font-weight: 500;
-  color:white;
+  color:#ebebeb;
   text-shadow: 3px 3px 3px black;
 }
 
@@ -613,6 +609,14 @@ path{
   to {
       stroke-dashoffset: 0;
   }
+}
+
+/* Portfolio
+================================================== */
+
+#portfolio{
+  background-color: #ebebeb;
+  height: 1000px;
 }
 
 
