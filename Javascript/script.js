@@ -106,3 +106,36 @@ new Typewriter (txtAnim, {
 
 .start()
 
+
+// Animation cercles de compétences
+// ==================================================
+
+const container = document.querySelector('#container');
+
+const html = document.querySelector('.pourcent1 svg circle:nth-child(2)');
+const css = document.querySelector('.pourcent2 svg circle:nth-child(2)'); 
+const js = document.querySelector('.pourcent3 svg circle:nth-child(2)'); 
+const wp = document.querySelector('.pourcent4 svg circle:nth-child(2)'); 
+const bs = document.querySelector('.pourcent5 svg circle:nth-child(2)'); 
+const java = document.querySelector('.pourcent6 svg circle:nth-child(2)'); 
+const node = document.querySelector('.pourcent7 svg circle:nth-child(2)'); 
+const react = document.querySelector('.pourcent8 svg circle:nth-child(2)'); 
+
+window.addEventListener('scroll', () => {
+
+    const {scrollTop, clientHeight} = document.documentElement;
+
+    const topElementToTopViewport = html.getBoundingClientRect().top;
+
+    if(scrollTop > (scrollTop + topElementToTopViewport).toFixed() - clientHeight * 0.8){
+      html.classList.add('scroll');
+      css.classList.add('scroll');
+      js.classList.add('scroll');
+      wp.classList.add('scroll');
+      bs.classList.add('scroll');
+      java.classList.add('scroll');
+      node.classList.add('scroll');
+      react.classList.add('scroll');
+    }
+})
+

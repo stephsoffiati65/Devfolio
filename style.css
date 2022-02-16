@@ -388,8 +388,8 @@ path{
   stroke-dashoffset: 0;
 }
 
-.pourcent1 svg circle:nth-child(2){
- animation: circle-pourcent1 2s forwards;
+.pourcent1 svg circle:nth-child(2).scroll{
+ animation: circle-pourcent1 4s forwards;
 }
 
 @keyframes circle-pourcent1{
@@ -415,8 +415,8 @@ path{
   stroke-dashoffset: 0;
 }
 
-.pourcent2 svg circle:nth-child(2){
- animation: circle-pourcent2 2s forwards;
+.pourcent2 svg circle:nth-child(2).scroll{
+ animation: circle-pourcent2 4s forwards;
 }
 
 @keyframes circle-pourcent2{
@@ -442,8 +442,8 @@ path{
   stroke-dashoffset: 0;
 }
 
-.pourcent3 svg circle:nth-child(2){
- animation: circle-pourcent3 2s forwards;
+.pourcent3 svg circle:nth-child(2).scroll{
+ animation: circle-pourcent3 4s forwards;
 }
 
 @keyframes circle-pourcent3{
@@ -469,8 +469,8 @@ path{
   stroke-dashoffset: 0;
 }
 
-.pourcent4 svg circle:nth-child(2){
- animation: circle-pourcent3 2s forwards;
+.pourcent4 svg circle:nth-child(2).scroll{
+ animation: circle-pourcent3 4s forwards;
 }
 
 @keyframes circle-pourcent4{
@@ -497,8 +497,8 @@ path{
   
 }
 
-.pourcent5 svg circle:nth-child(2){
- animation: circle-pourcent5 2s forwards;
+.pourcent5 svg circle:nth-child(2).scroll{
+ animation: circle-pourcent5 4s forwards;
 }
 
 @keyframes circle-pourcent5{
@@ -524,8 +524,8 @@ path{
   stroke-dashoffset: 0;
 }
 
-.pourcent6 svg circle:nth-child(2){
- animation: circle-pourcent6 2s forwards;
+.pourcent6 svg circle:nth-child(2).scroll{
+ animation: circle-pourcent6 4s forwards;
 }
 
 @keyframes circle-pourcent6{
@@ -551,8 +551,8 @@ path{
   stroke-dashoffset: 0;
 }
 
-.pourcent7 svg circle:nth-child(2){
- animation: circle-pourcent7 2s forwards;
+.pourcent7 svg circle:nth-child(2).scroll{
+ animation: circle-pourcent7 4s forwards;
 }
 
 @keyframes circle-pourcent7{
@@ -578,8 +578,8 @@ path{
   stroke-dashoffset: 0;
 }
 
-.pourcent8 svg circle:nth-child(2){
- animation: circle-pourcent8 2s forwards;
+.pourcent8 svg circle:nth-child(2).scroll{
+ animation: circle-pourcent8 4s forwards;
 }
 
 @keyframes circle-pourcent8{
