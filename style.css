@@ -287,8 +287,7 @@ path{
 #career ul li{
   list-style-type: none;
   text-align: left;
-  padding-bottom: 30px;
-  padding-top: 20px;
+  padding-bottom: 50px;
 }
 
 .icon-graduation{
@@ -333,6 +332,7 @@ path{
   width:900px; 
   margin: auto;
   display: none;
+  margin-bottom: 50px;
 }
 
 .hrAbout {
@@ -379,7 +379,7 @@ path{
   stroke-width: 10px;
   transform: translate(5px, 5px);
   stroke-linecap: round;
-  stroke-dasharray: 490;
+  stroke-dasharray: 440;
   stroke-dashoffset: 440;
 }
 
@@ -394,7 +394,7 @@ path{
 
 @keyframes circle-pourcent1{
   to{
-      stroke-dashoffset: 200;
+      stroke-dashoffset: 50;
   }
 }
 
@@ -406,7 +406,7 @@ path{
   stroke-width: 10px;
   transform: translate(5px, 5px);
   stroke-linecap: round;
-  stroke-dasharray: 490;
+  stroke-dasharray: 440;
   stroke-dashoffset: 440;
 }
 
@@ -421,67 +421,40 @@ path{
 
 @keyframes circle-pourcent2{
   to{
-      stroke-dashoffset: 100;
+      stroke-dashoffset: 50;
   }
 }
 
 /* Javascript */
 
-#js circle{
+.pourcent3 svg circle{
   fill: none;
   stroke: #B0F2B6;
   stroke-width: 10px;
   transform: translate(5px, 5px);
   stroke-linecap: round;
-  stroke-dasharray: 470;
+  stroke-dasharray: 440;
   stroke-dashoffset: 440;
 }
 
-#js circle:nth-child(1){
+.pourcent3 svg circle:nth-child(1){
   stroke: #000000;
   stroke-dashoffset: 0;
 }
 
-#js circle:nth-child(2){
- animation: circle 2s forwards;
+.pourcent3 svg circle:nth-child(2){
+ animation: circle-pourcent3 2s forwards;
 }
 
-@keyframes circle-pourcent1{
+@keyframes circle-pourcent3{
   to{
-      stroke-dashoffset: 200;
+      stroke-dashoffset: 100;
   }
 }
 
 /* Wordpress */
 
-#wp circle{
-  fill: none;
-  stroke: #B0F2B6;
-  stroke-width: 10px;
-  transform: translate(5px, 5px);
-  stroke-linecap: round;
-  stroke-dasharray: 440;
-  stroke-dashoffset: 400;
-}
-
-#wp circle:nth-child(1){
-  stroke: #000000;
-  stroke-dashoffset: 0;
-}
-
-#wp circle:nth-child(2){
- animation: circle 2s forwards;
-}
-
-@keyframes circle-pourcent1{
-  to{
-      stroke-dashoffset: 200;
-  }
-}
-
-/* Bootstrap */
-
-#bs circle{
+.pourcent4 svg circle{
   fill: none;
   stroke: #B0F2B6;
   stroke-width: 10px;
@@ -491,44 +464,71 @@ path{
   stroke-dashoffset: 440;
 }
 
-#bs circle:nth-child(1){
+.pourcent4 svg circle:nth-child(1){
   stroke: #000000;
   stroke-dashoffset: 0;
-  
 }
 
-#bs circle:nth-child(2){
- animation: circle 2s forwards;
+.pourcent4 svg circle:nth-child(2){
+ animation: circle-pourcent3 2s forwards;
 }
 
-@keyframes circle-pourcent1{
+@keyframes circle-pourcent4{
   to{
-      stroke-dashoffset: 200;
+      stroke-dashoffset: 100;
   }
 }
 
-/* React */
+/* Bootstrap */
 
-#react circle{
+.pourcent5 svg circle{
   fill: none;
   stroke: #B0F2B6;
   stroke-width: 10px;
   transform: translate(5px, 5px);
   stroke-linecap: round;
   stroke-dasharray: 440;
-  stroke-dashoffset: 400;
+  stroke-dashoffset: 440;
 }
 
-#react circle:nth-child(1){
+.pourcent5 svg circle:nth-child(1){
+  stroke: #000000;
+  stroke-dashoffset: 0;
+  
+}
+
+.pourcent5 svg circle:nth-child(2){
+ animation: circle-pourcent5 2s forwards;
+}
+
+@keyframes circle-pourcent5{
+  to{
+      stroke-dashoffset: 150;
+  }
+}
+
+/* Java */
+
+.pourcent6 svg circle{
+  fill: none;
+  stroke: #B0F2B6;
+  stroke-width: 10px;
+  transform: translate(5px, 5px);
+  stroke-linecap: round;
+  stroke-dasharray: 440;
+  stroke-dashoffset: 440;
+}
+
+.pourcent6 svg circle:nth-child(1){
   stroke: #000000;
   stroke-dashoffset: 0;
 }
 
-#react circle:nth-child(2){
- animation: circle 2s forwards;
+.pourcent6 svg circle:nth-child(2){
+ animation: circle-pourcent6 2s forwards;
 }
 
-@keyframes circle-pourcent1{
+@keyframes circle-pourcent6{
   to{
       stroke-dashoffset: 200;
   }
@@ -536,55 +536,55 @@ path{
 
 /* Node JS */
 
-#node circle{
+.pourcent7 svg circle{
   fill: none;
   stroke: #B0F2B6;
   stroke-width: 10px;
   transform: translate(5px, 5px);
   stroke-linecap: round;
   stroke-dasharray: 440;
-  stroke-dashoffset: 400;
+  stroke-dashoffset: 440;
 }
 
-#node circle:nth-child(1){
+.pourcent7 svg circle:nth-child(1){
   stroke: #000000;
   stroke-dashoffset: 0;
 }
 
-#node circle:nth-child(2){
- animation: circle 2s forwards;
+.pourcent7 svg circle:nth-child(2){
+ animation: circle-pourcent7 2s forwards;
 }
 
-@keyframes circle-pourcent1{
+@keyframes circle-pourcent7{
   to{
-      stroke-dashoffset: 200;
+      stroke-dashoffset: 280;
   }
 }
 
-/* Java */
+/* React*/
 
-#java circle{
+.pourcent8 svg circle{
   fill: none;
   stroke: #B0F2B6;
   stroke-width: 10px;
   transform: translate(5px, 5px);
   stroke-linecap: round;
   stroke-dasharray: 440;
-  stroke-dashoffset: 400;
+  stroke-dashoffset: 440;
 }
 
-#java circle:nth-child(1){
+.pourcent8 svg circle:nth-child(1){
   stroke: #000000;
   stroke-dashoffset: 0;
 }
 
-#java circle:nth-child(2){
- animation: circle 2s forwards;
+.pourcent8 svg circle:nth-child(2){
+ animation: circle-pourcent8 2s forwards;
 }
 
-@keyframes circle-pourcent1{
+@keyframes circle-pourcent8{
   to{
-      stroke-dashoffset: 200;
+      stroke-dashoffset: 320;
   }
 }
 

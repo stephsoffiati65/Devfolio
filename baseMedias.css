@@ -72,7 +72,7 @@
     }
 
     #career ul li{
-        margin-left: 15%;
+        margin-left: 20%;
     }
 
     .hrResp{
@@ -135,3 +135,34 @@
 
 /* Compétences
 ================================================== */
+
+@media (max-width: 1500px){
+  
+   .pourcent {
+    padding: 0px 85px;
+    }
+        
+}
+
+ @media (max-width: 1400px){
+  
+    .pourcent {
+     padding: 0px 65px;
+    }
+         
+}
+
+@media (max-width: 1250px){
+  
+    .pourcent {
+     padding: 0px 40px;
+    }       
+}
+
+@media (max-width: 1020px){
+  
+    .pourcent {
+     padding: 0px 90px;
+    }       
+}
+
