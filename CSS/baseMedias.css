@@ -36,6 +36,10 @@
     svg{
       width: 400px;
     }
+
+    h2{
+        font-size: 35px;
+    }
 }
 
 @media (max-width: 480px){
@@ -48,8 +52,24 @@
         font-size: 12px;
     }
 
-    #name{
+    /* #name{
         padding-top: 30%;
+    } */
+
+    #logo{
+        width: 70px;
+        margin-bottom: 0px;
+    }
+
+    #career img {
+        width: 250px;
+        height: 195px;
+    }
+
+    .loader 
+    {
+        position: relative;
+        height  : 250px;
     }
 
     .burgerIcon img, .xIcon img {

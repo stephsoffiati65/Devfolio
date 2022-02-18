@@ -2,15 +2,15 @@
 <html lang="fr">
 
 <head>
-    <title>DevFolio</title>
+    <title>Développeur web freelance - Stéphane Soffiati</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- CSS
    ================================================== -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="baseMedias.css">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="/CSS/baseMedias.css">
 
     <!-- Font Awesome
    ================================================== -->
@@ -34,10 +34,11 @@
 
             <button class="ham">
                 <span class="burgerIcon">
-                    <img src="images/burger.png" alt="burger">
+                    <img src="/images/burger.png" alt="burger">
+                    <img class="none" src="/images/burger2.png" alt="burger">
                 </span>
                 <span class="xIcon">
-                    <img src="images/croix.png" alt="croix">
+                    <img src="/images/croix.png" alt="croix">
                 </span>
             </button>
 
@@ -52,9 +53,29 @@
 
         </nav>
 
+        <div id="loaderCont">
+            <div class="loader">
+                <div id="contain">
+                    <img src="/images/logo2.png" alt="logo">
+                </div>
+                <span style="--i:1;"></span>
+                <span style="--i:2;"></span>
+                <span style="--i:3;"></span>
+                <span style="--i:4;"></span>
+                <span style="--i:5;"></span>
+                <span style="--i:6;"></span>
+                <span style="--i:7;"></span>
+                <span style="--i:8;"></span>
+                <span style="--i:9;"></span>
+                <span style="--i:10;"></span>
+            </div>
+        </div>
+
         <div id="name">
 
             <h1>
+                <img id="logo" src="/images/logo2.png" alt="logo"> <br>
+
                 <svg width="603" height="52" viewBox="0 0 603 52" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <mask id="path-1-outside-1_2_12" maskUnits="userSpaceOnUse" x="0.53125" y="0.875" width="603"
                         height="51" fill="black">
@@ -195,7 +216,7 @@
                 <li>
                     <span class="icon-graduation"><i class="fas fa-graduation-cap"></i></span>
                     <span class="green">2001</span><span class="grey">&nbsp; Bac STI Electrotechnique </span>
-                    <span class="green"><br class="none jumpAbout"> Lycée Blanche Odin</span>
+                    <span class="green"><br class="none jumpAbout"> Lycée Victor Duruy</span>
                     <hr class="hrAbout">
                 </li>
 
@@ -232,13 +253,13 @@
 
         </div>
 
-    <!-- Compétences
+        <!-- Compétences
    ================================================== -->
-    
+
         <h2 class="grey">COMPÉTENCES</h2>
-    
+
         <hr class="hrTitle ">
-    
+
         <div id="container">
             <div class="pourcent1">
                 <div class="pourcent">
@@ -315,131 +336,131 @@
         </div>
     </div>
 
-     <!-- Portfolio
+    <!-- Portfolio
    ================================================== -->
 
 
-   <section id="portfolio">
+    <section id="portfolio">
 
-    <h2>PORTFOLIO</h2>
-    
-    <hr class="hrTitle2">
+        <h2>PORTFOLIO</h2>
 
-    </div> <!-- /section-intro-->
+        <hr class="hrTitle2">
 
-    <div class="row portfolio-content">
+        <!-- /section-intro-->
 
-        <div class="col-twelve">
+        <div class="row portfolio-content">
 
-            <!-- portfolio-wrapper -->
-            <div id="folio-wrapper" class="block-1-2 block-mob-full stack">
+            <div class="col-twelve">
 
-                <div class="bgrid folio-item">
-                    <div class="item-wrap">
-                        <img src="images/portfolio/liberty.jpg" alt="Liberty">
-                        <a href="#modal-01" class="overlay">
-                            <div class="folio-item-table">
-                                <div class="folio-item-cell">
-                                    <h3 class="folio-title">Liberty</h3>
-                                    <span class="folio-types">
-                                        Graphic Design
-                                    </span>
+                <!-- portfolio-wrapper -->
+                <div id="folio-wrapper" class="block-1-2 block-mob-full stack">
+
+                    <div class="bgrid folio-item">
+                        <div class="item-wrap">
+                            <img src="images/portfolio/liberty.jpg" alt="Liberty">
+                            <a href="#modal-01" class="overlay">
+                                <div class="folio-item-table">
+                                    <div class="folio-item-cell">
+                                        <h3 class="folio-title">Liberty</h3>
+                                        <span class="folio-types">
+                                            Graphic Design
+                                        </span>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                    </div>
-                </div> <!-- /folio-item -->
+                            </a>
+                        </div>
+                    </div> <!-- /folio-item -->
 
-                <div class="bgrid folio-item">
-                    <div class="item-wrap">
-                        <img src="images/portfolio/shutterbug.jpg" alt="Shutterbug">
-                        <a href="#modal-02" class="overlay">
-                            <div class="folio-item-table">
-                                <div class="folio-item-cell">
-                                    <h3 class="folio-title">Shutterbug</h3>
-                                    <span class="folio-types">
-                                        Web Design
-                                    </span>
+                    <div class="bgrid folio-item">
+                        <div class="item-wrap">
+                            <img src="images/portfolio/shutterbug.jpg" alt="Shutterbug">
+                            <a href="#modal-02" class="overlay">
+                                <div class="folio-item-table">
+                                    <div class="folio-item-cell">
+                                        <h3 class="folio-title">Shutterbug</h3>
+                                        <span class="folio-types">
+                                            Web Design
+                                        </span>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                    </div>
-                </div> <!-- /folio-item -->
+                            </a>
+                        </div>
+                    </div> <!-- /folio-item -->
 
-                <div class="bgrid folio-item">
-                    <div class="item-wrap">
-                        <img src="images/portfolio/clouds.jpg" alt="Clouds">
-                        <a href="#modal-03" class="overlay">
-                            <div class="folio-item-table">
-                                <div class="folio-item-cell">
-                                    <h3 class="folio-title">Clouds</h3>
-                                    <span class="folio-types">
-                                        Web Design
-                                    </span>
+                    <div class="bgrid folio-item">
+                        <div class="item-wrap">
+                            <img src="images/portfolio/clouds.jpg" alt="Clouds">
+                            <a href="#modal-03" class="overlay">
+                                <div class="folio-item-table">
+                                    <div class="folio-item-cell">
+                                        <h3 class="folio-title">Clouds</h3>
+                                        <span class="folio-types">
+                                            Web Design
+                                        </span>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                    </div>
-                </div> <!-- /folio-item -->
+                            </a>
+                        </div>
+                    </div> <!-- /folio-item -->
 
-                <div class="bgrid folio-item">
-                    <div class="item-wrap">
-                        <img src="images/portfolio/beetle.jpg" alt="Beetle">
-                        <a href="#modal-04" class="overlay">
-                            <div class="folio-item-table">
-                                <div class="folio-item-cell">
-                                    <h3 class="folio-title">Beetle</h3>
-                                    <span class="folio-types">
-                                        Branding
-                                    </span>
+                    <div class="bgrid folio-item">
+                        <div class="item-wrap">
+                            <img src="images/portfolio/beetle.jpg" alt="Beetle">
+                            <a href="#modal-04" class="overlay">
+                                <div class="folio-item-table">
+                                    <div class="folio-item-cell">
+                                        <h3 class="folio-title">Beetle</h3>
+                                        <span class="folio-types">
+                                            Branding
+                                        </span>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                    </div>
-                </div> <!-- /folio-item -->
+                            </a>
+                        </div>
+                    </div> <!-- /folio-item -->
 
-                <div class="bgrid folio-item">
-                    <div class="item-wrap">
-                        <img src="images/portfolio/lighthouse.jpg" alt="Lighthouse">
-                        <a href="#modal-05" class="overlay">
-                            <div class="folio-item-table">
-                                <div class="folio-item-cell">
-                                    <h3 class="folio-title">Lighthouse</h3>
-                                    <span class="folio-types">
-                                        Web Development
-                                    </span>
+                    <div class="bgrid folio-item">
+                        <div class="item-wrap">
+                            <img src="images/portfolio/lighthouse.jpg" alt="Lighthouse">
+                            <a href="#modal-05" class="overlay">
+                                <div class="folio-item-table">
+                                    <div class="folio-item-cell">
+                                        <h3 class="folio-title">Lighthouse</h3>
+                                        <span class="folio-types">
+                                            Web Development
+                                        </span>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                    </div>
-                </div> <!-- /folio-item -->
+                            </a>
+                        </div>
+                    </div> <!-- /folio-item -->
 
-                <div class="bgrid folio-item">
-                    <div class="item-wrap">
-                        <img src="images/portfolio/salad.jpg" alt="Salad">
-                        <a href="#modal-06" class="overlay">
-                            <div class="folio-item-table">
-                                <div class="folio-item-cell">
-                                    <h3 class="folio-title">Salad</h3>
-                                    <span class="folio-types">
-                                        Branding
-                                    </span>
+                    <div class="bgrid folio-item">
+                        <div class="item-wrap">
+                            <img src="images/portfolio/salad.jpg" alt="Salad">
+                            <a href="#modal-06" class="overlay">
+                                <div class="folio-item-table">
+                                    <div class="folio-item-cell">
+                                        <h3 class="folio-title">Salad</h3>
+                                        <span class="folio-types">
+                                            Branding
+                                        </span>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                    </div>
-                </div> <!-- /folio-item -->
+                            </a>
+                        </div>
+                    </div> <!-- /folio-item -->
 
-                				<!-- modal popups - begin
+                    <!-- modal popups - begin
 	            ============================================================= -->
 
-				</div> <!-- /portfolio-wrapper -->
+                </div> <!-- /portfolio-wrapper -->
 
-			</div> <!-- /twelve -->
+            </div> <!-- /twelve -->
 
-		</div> <!-- /portfolio-content -->
+        </div> <!-- /portfolio-content -->
 
-	</section> <!-- /portfolio -->
+    </section> <!-- /portfolio -->
 
 
     <!-- Contact
@@ -585,8 +606,6 @@
                 </div>
             </div>
 
-
-
         </div>
     </footer>
 
@@ -598,4 +617,4 @@
 
 </body>
 
-</html> -->
+</html>

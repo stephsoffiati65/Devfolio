@@ -1,81 +1,99 @@
 
+// Particules et Header
+// ==================================================
+
+function showContent() {
+  document.querySelector('#loaderCont').classList.add('hidden');
+}
+
+setTimeout(showContent,3000)
+
+window.onload = function()
+{
+  setTimeout(function()
+  {
+    document.querySelector('#name').style.display = "block";
+  }, 3000);
+
+}
+
+
 // Animation burger
 // ==================================================
 
-        let menu = document.querySelector(".menu")
-        let ham = document.querySelector(".ham")
-        let xIcon = document.querySelector(".xIcon")
-        let burgerIcon = document.querySelector(".burgerIcon")
-        let a1 = document.querySelector("#a1")
-        let a2 = document.querySelector("#a2")
-        let a3 = document.querySelector("#a3")
-        let a4 = document.querySelector("#a4")
-        let a5 = document.querySelector("#a5")
-        let a6 = document.querySelector("#a6")
+let menu = document.querySelector(".menu")
+let ham = document.querySelector(".ham")
+let xIcon = document.querySelector(".xIcon")
+let burgerIcon = document.querySelector(".burgerIcon")
+let a1 = document.querySelector("#a1")
+let a2 = document.querySelector("#a2")
+let a3 = document.querySelector("#a3")
+let a4 = document.querySelector("#a4")
+let a5 = document.querySelector("#a5")
+let a6 = document.querySelector("#a6")
 
 
-      
-        ham.addEventListener("click", toggleMenu)
-      
-        function toggleMenu() {
-          if (menu.classList.contains("showMenu")) {
-            menu.classList.remove("showMenu");
-            xIcon.style.display = "none";
-            burgerIcon.style.display = "block";
-          } else {
-            menu.classList.add("showMenu");
-            xIcon.style.display = "block";
-            burgerIcon.style.display = "none";
-          }
-        }
+ham.addEventListener("click", toggleMenu)
 
-        a1.addEventListener("click", toggleLink)
+function toggleMenu() {
+  if (menu.classList.contains("showMenu")) {
+    menu.classList.remove("showMenu");
+    xIcon.style.display = "none";
+    burgerIcon.style.display = "block";
+  } else {
+    menu.classList.add("showMenu");
+    xIcon.style.display = "block";
+    burgerIcon.style.display = "none";
+  }
+}
 
-        function toggleLink() {
-            menu.classList.remove("showMenu");
-            xIcon.style.display = "none";
-            burgerIcon.style.display = "block";
-        }
+a1.addEventListener("click", toggleLink)
 
-        a2.addEventListener("click", toggleLink)
+function toggleLink() {
+  menu.classList.remove("showMenu");
+  xIcon.style.display = "none";
+  burgerIcon.style.display = "block";
+}
 
-        function toggleLink() {
-            menu.classList.remove("showMenu");
-            xIcon.style.display = "none";
-            burgerIcon.style.display = "block";
-        }
+a2.addEventListener("click", toggleLink)
 
-        a3.addEventListener("click", toggleLink)
+function toggleLink() {
+  menu.classList.remove("showMenu");
+  xIcon.style.display = "none";
+  burgerIcon.style.display = "block";
+}
 
-        function toggleLink() {
-            menu.classList.remove("showMenu");
-            xIcon.style.display = "none";
-            burgerIcon.style.display = "block";
-        }
+a3.addEventListener("click", toggleLink)
 
-        a4.addEventListener("click", toggleLink)
+function toggleLink() {
+  menu.classList.remove("showMenu");
+  xIcon.style.display = "none";
+  burgerIcon.style.display = "block";
+}
 
-        function toggleLink() {
-            menu.classList.remove("showMenu");
-            xIcon.style.display = "none";
-            burgerIcon.style.display = "block";
-        }
+a4.addEventListener("click", toggleLink)
 
-        a5.addEventListener("click", toggleLink)
+function toggleLink() {
+  menu.classList.remove("showMenu");
+  xIcon.style.display = "none";
+  burgerIcon.style.display = "block";
+}
 
-        function toggleLink() {
-            menu.classList.remove("showMenu");
-            xIcon.style.display = "none";
-            burgerIcon.style.display = "block";
-        }
+a5.addEventListener("click", toggleLink)
 
-        a6.addEventListener("click", toggleLink)
+function toggleLink() {
+  menu.classList.remove("showMenu");
+  xIcon.style.display = "none";
+  burgerIcon.style.display = "block";
+}
 
-        function toggleLink() {
-            menu.classList.remove("showMenu");
-            xIcon.style.display = "none";
-            burgerIcon.style.display = "block";
-        }
+a6.addEventListener("click", toggleLink)
+
+function toggleLink() {
+  menu.classList.remove("showMenu");
+  xIcon.style.display = "none";
+  burgerIcon.style.display = "block";
+}
 
 
 // Animation SVG
@@ -89,22 +107,22 @@ const path = document.querySelector('path');
 
 const txtAnim = document.querySelector("#typeWriter")
 
-new Typewriter (txtAnim, {
+new Typewriter(txtAnim, {
   loop: true,
   delay: 80,
   deleteSpeed: 60,
 })
-.typeString ('<strong>FRONT-END</strong>')
-.pauseFor(300)
-.deleteChars(9)
-.typeString('<strong>WORDPRESS</strong>')
-.pauseFor(300)
-.deleteChars(9)
-.typeString('<strong>FREELANCE</strong>')
-.pauseFor(300)
-.deleteChars(9)
+  .typeString('<strong>FRONT-END</strong>')
+  .pauseFor(300)
+  .deleteChars(9)
+  .typeString('<strong>WORDPRESS</strong>')
+  .pauseFor(300)
+  .deleteChars(9)
+  .typeString('<strong>FREELANCE</strong>')
+  .pauseFor(300)
+  .deleteChars(9)
 
-.start()
+  .start()
 
 
 // Animation cercles de compétences
@@ -113,29 +131,29 @@ new Typewriter (txtAnim, {
 const container = document.querySelector('#container');
 
 const html = document.querySelector('.pourcent1 svg circle:nth-child(2)');
-const css = document.querySelector('.pourcent2 svg circle:nth-child(2)'); 
-const js = document.querySelector('.pourcent3 svg circle:nth-child(2)'); 
-const wp = document.querySelector('.pourcent4 svg circle:nth-child(2)'); 
-const bs = document.querySelector('.pourcent5 svg circle:nth-child(2)'); 
-const java = document.querySelector('.pourcent6 svg circle:nth-child(2)'); 
-const node = document.querySelector('.pourcent7 svg circle:nth-child(2)'); 
-const react = document.querySelector('.pourcent8 svg circle:nth-child(2)'); 
+const css = document.querySelector('.pourcent2 svg circle:nth-child(2)');
+const js = document.querySelector('.pourcent3 svg circle:nth-child(2)');
+const wp = document.querySelector('.pourcent4 svg circle:nth-child(2)');
+const bs = document.querySelector('.pourcent5 svg circle:nth-child(2)');
+const java = document.querySelector('.pourcent6 svg circle:nth-child(2)');
+const node = document.querySelector('.pourcent7 svg circle:nth-child(2)');
+const react = document.querySelector('.pourcent8 svg circle:nth-child(2)');
 
 window.addEventListener('scroll', () => {
 
-    const {scrollTop, clientHeight} = document.documentElement;
+  const { scrollTop, clientHeight } = document.documentElement;
 
-    const topElementToTopViewport = html.getBoundingClientRect().top;
+  const topElementToTopViewport = html.getBoundingClientRect().top;
 
-    if(scrollTop > (scrollTop + topElementToTopViewport).toFixed() - clientHeight * 0.8){
-      html.classList.add('scroll');
-      css.classList.add('scroll');
-      js.classList.add('scroll');
-      wp.classList.add('scroll');
-      bs.classList.add('scroll');
-      java.classList.add('scroll');
-      node.classList.add('scroll');
-      react.classList.add('scroll');
-    }
+  if (scrollTop > (scrollTop + topElementToTopViewport).toFixed() - clientHeight * 0.8) {
+    html.classList.add('scroll');
+    css.classList.add('scroll');
+    js.classList.add('scroll');
+    wp.classList.add('scroll');
+    bs.classList.add('scroll');
+    java.classList.add('scroll');
+    node.classList.add('scroll');
+    react.classList.add('scroll');
+  }
 })
 
