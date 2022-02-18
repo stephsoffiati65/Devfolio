@@ -2,20 +2,21 @@
 // Particules et Header
 // ==================================================
 
+let loader = document.querySelector('#loaderCont');
+let blocName = document.querySelector('#name');
+
 function showContent() {
-  document.querySelector('#loaderCont').classList.add('hidden');
+  loader.classList.add('hidden');
 }
 
-setTimeout(showContent,3000)
+setTimeout(showContent, 3000)
 
-window.onload = function()
-{
-  setTimeout(function()
-  {
-    document.querySelector('#name').style.display = "block";
+window.onload = function () {
+  setTimeout(function () {
+    blocName.style.display = "block";
   }, 3000);
-
 }
+
 
 
 // Animation burger
@@ -128,8 +129,6 @@ new Typewriter(txtAnim, {
 // Animation cercles de compétences
 // ==================================================
 
-const container = document.querySelector('#container');
-
 const html = document.querySelector('.pourcent1 svg circle:nth-child(2)');
 const css = document.querySelector('.pourcent2 svg circle:nth-child(2)');
 const js = document.querySelector('.pourcent3 svg circle:nth-child(2)');
@@ -154,6 +153,38 @@ window.addEventListener('scroll', () => {
     java.classList.add('scroll');
     node.classList.add('scroll');
     react.classList.add('scroll');
+  } else {
+    html.classList.remove('scroll');
+    css.classList.remove('scroll');
+    js.classList.remove('scroll');
+    wp.classList.remove('scroll');
+    bs.classList.remove('scroll');
+    java.classList.remove('scroll');
+    node.classList.remove('scroll');
+    react.classList.remove('scroll');
+  }
+})
+
+// Portfolio
+// ==================================================
+
+const portfolio = document.querySelector('#portfolio');
+const greenBurger = document.querySelector('#greenBurger');
+const blackBurger = document.querySelector('#blackBurger');
+
+
+window.addEventListener('scroll', () => {
+
+  const { scrollTop, clientHeight } = document.documentElement;
+
+  const topPortfolio = portfolio.getBoundingClientRect().top;
+
+  if (scrollTop > (scrollTop + topPortfolio).toFixed() - clientHeight * 0.1) {
+    greenBurger.style.display = "none";
+    blackBurger.style.display = "block";
+  } else {
+    greenBurger.style.display = "block";
+    blackBurger.style.display = "none";
   }
 })
 

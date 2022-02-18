@@ -34,8 +34,8 @@
 
             <button class="ham">
                 <span class="burgerIcon">
-                    <img src="images/burger.png" alt="burger">
-                    <img class="none" src="images/burger2.png" alt="burger">
+                    <img id="greenBurger" src="images/burger.png" alt="burger">
+                    <img id="blackBurger" class="none" src="images/burger2.png" alt="burger">
                 </span>
                 <span class="xIcon">
                     <img src="images/croix.png" alt="croix">
@@ -178,7 +178,7 @@
     <!-- A propos
    ================================================== -->
 
-    <div id="about">
+    <section id="about">
 
         <h2 class="grey">A PROPOS</h2>
 
@@ -256,240 +256,182 @@
         <!-- Compétences
    ================================================== -->
 
-        <h2 class="grey">COMPÉTENCES</h2>
+        <section id="competences">
 
-        <hr class="hrTitle ">
+            <h2 class="grey">COMPÉTENCES</h2>
 
-        <div id="container">
-            <div class="pourcent1">
-                <div class="pourcent">
-                    <svg class="level">
-                        <circle cx="70px" cy="70px" r="70px"></circle>
-                        <circle cx="70px" cy="70px" r="70px"></circle>
-                    </svg>
-                    <span class="langage">HTML</span>
+            <hr class="hrTitle ">
+
+            <div id="container">
+                <div class="pourcent1">
+                    <div class="pourcent">
+                        <svg class="level">
+                            <circle cx="70px" cy="70px" r="70px"></circle>
+                            <circle cx="70px" cy="70px" r="70px"></circle>
+                        </svg>
+                        <span class="langage">HTML</span>
+                    </div>
+                </div>
+                <div class="pourcent2">
+                    <div class="pourcent">
+                        <svg class="level">
+                            <circle cx="70px" cy="70px" r="70px"></circle>
+                            <circle cx="70px" cy="70px" r="70px"></circle>
+                        </svg>
+                        <span class="langage">CSS</span>
+                    </div>
+                </div>
+                <div class="pourcent3">
+                    <div class="pourcent">
+                        <svg id="js" class="level">
+                            <circle cx="70px" cy="70px" r="70px"></circle>
+                            <circle cx="70px" cy="70px" r="70px"></circle>
+                        </svg>
+                        <span class="langage">Javascript</span>
+                    </div>
+                </div>
+                <div class="pourcent4">
+                    <div class="pourcent">
+                        <svg id="wp" class="level">
+                            <circle cx="70px" cy="70px" r="70px"></circle>
+                            <circle cx="70px" cy="70px" r="70px"></circle>
+                        </svg>
+                        <span class="langage">Wordpress</span>
+                    </div>
+                </div>
+                <div class="pourcent5">
+                    <div class="pourcent">
+                        <svg id="bs" class="level">
+                            <circle cx="70px" cy="70px" r="70px"></circle>
+                            <circle cx="70px" cy="70px" r="70px"></circle>
+                        </svg>
+                        <span class="langage">Bootstrap</span>
+                    </div>
+                </div>
+                <div class="pourcent6">
+                    <div class="pourcent">
+                        <svg id="java" class="level">
+                            <circle cx="70px" cy="70px" r="70px"></circle>
+                            <circle cx="70px" cy="70px" r="70px"></circle>
+                        </svg>
+                        <span class="langage">Java</span>
+                    </div>
+                </div>
+                <div class="pourcent7">
+                    <div class="pourcent">
+                        <svg id="node" class="level">
+                            <circle cx="70px" cy="70px" r="70px"></circle>
+                            <circle cx="70px" cy="70px" r="70px"></circle>
+                        </svg>
+                        <span class="langage">Node JS</span>
+                    </div>
+                </div>
+                <div class="pourcent8">
+                    <div class="pourcent">
+                        <svg id="react" class="level">
+                            <circle cx="70px" cy="70px" r="70px"></circle>
+                            <circle cx="70px" cy="70px" r="70px"></circle>
+                        </svg>
+                        <span class="langage">React</span>
+                    </div>
                 </div>
             </div>
-            <div class="pourcent2">
-                <div class="pourcent">
-                    <svg class="level">
-                        <circle cx="70px" cy="70px" r="70px"></circle>
-                        <circle cx="70px" cy="70px" r="70px"></circle>
-                    </svg>
-                    <span class="langage">CSS</span>
-                </div>
-            </div>
-            <div class="pourcent3">
-                <div class="pourcent">
-                    <svg id="js" class="level">
-                        <circle cx="70px" cy="70px" r="70px"></circle>
-                        <circle cx="70px" cy="70px" r="70px"></circle>
-                    </svg>
-                    <span class="langage">Javascript</span>
-                </div>
-            </div>
-            <div class="pourcent4">
-                <div class="pourcent">
-                    <svg id="wp" class="level">
-                        <circle cx="70px" cy="70px" r="70px"></circle>
-                        <circle cx="70px" cy="70px" r="70px"></circle>
-                    </svg>
-                    <span class="langage">Wordpress</span>
-                </div>
-            </div>
-            <div class="pourcent5">
-                <div class="pourcent">
-                    <svg id="bs" class="level">
-                        <circle cx="70px" cy="70px" r="70px"></circle>
-                        <circle cx="70px" cy="70px" r="70px"></circle>
-                    </svg>
-                    <span class="langage">Bootstrap</span>
-                </div>
-            </div>
-            <div class="pourcent6">
-                <div class="pourcent">
-                    <svg id="java" class="level">
-                        <circle cx="70px" cy="70px" r="70px"></circle>
-                        <circle cx="70px" cy="70px" r="70px"></circle>
-                    </svg>
-                    <span class="langage">Java</span>
-                </div>
-            </div>
-            <div class="pourcent7">
-                <div class="pourcent">
-                    <svg id="node" class="level">
-                        <circle cx="70px" cy="70px" r="70px"></circle>
-                        <circle cx="70px" cy="70px" r="70px"></circle>
-                    </svg>
-                    <span class="langage">Node JS</span>
-                </div>
-            </div>
-            <div class="pourcent8">
-                <div class="pourcent">
-                    <svg id="react" class="level">
-                        <circle cx="70px" cy="70px" r="70px"></circle>
-                        <circle cx="70px" cy="70px" r="70px"></circle>
-                    </svg>
-                    <span class="langage">React</span>
-                </div>
-            </div>
-        </div>
-    </div>
+        </section><!-- Compétences -->
+    </section><!-- About -->
 
     <!-- Portfolio
    ================================================== -->
-
-
+   
     <section id="portfolio">
-
+    
         <h2>PORTFOLIO</h2>
-
-        <hr class="hrTitle2">
-
-        <!-- /section-intro-->
-
-        <div class="row portfolio-content">
-
-            <div class="col-twelve">
-
-                <!-- portfolio-wrapper -->
-                <div id="folio-wrapper" class="block-1-2 block-mob-full stack">
-
-                    <div class="bgrid folio-item">
-                        <div class="item-wrap">
-                            <img src="images/portfolio/liberty.jpg" alt="Liberty">
-                            <a href="#modal-01" class="overlay">
-                                <div class="folio-item-table">
-                                    <div class="folio-item-cell">
-                                        <h3 class="folio-title">Liberty</h3>
-                                        <span class="folio-types">
-                                            Graphic Design
-                                        </span>
-                                    </div>
-                                </div>
-                            </a>
+    
+        <hr class="hrTitle2 ">
+    
+        <div id="projectGrid">
+    
+            <div class="project">
+                <img src="images/portfolio/shutterbug.jpg" alt="Shutterbug">
+                <a class="overlay">
+                    <div class="folio-item-table">
+                        <div class="folio-item-cell">
+                            <h3 class="folio-title">Liberty</h3>
+                            <span class="folio-types">
+                                Graphic Design
+                            </span>
                         </div>
-                    </div> <!-- /folio-item -->
+                    </div>
+                </a>
+            </div>
+            <div class="project">
+                <img src="images/portfolio/clouds.jpg" alt="Clouds">
+                <a class="overlay"></a>
+            </div>
+            <div class="project">
+                <img src="images/portfolio/beetle.jpg" alt="Beetle">
+                <a class="overlay"></a>
+            </div>
+            <div class="project">
+                <img src="images/portfolio/lighthouse.jpg" alt="Lighthouse">
+                <a class="overlay"></a>
+            </div>
+            <div class="project">
+                <img src="images/portfolio/salad.jpg" alt="Salad">
+                <a class="overlay"></a>
+            </div>
+            <div class="project">
+                <img src="images/portfolio/liberty.jpg" alt="Liberty">
+                <a class="overlay"></a>
+            </div>
+    
+        </div>
+    
+    </section>
 
-                    <div class="bgrid folio-item">
-                        <div class="item-wrap">
-                            <img src="images/portfolio/shutterbug.jpg" alt="Shutterbug">
-                            <a href="#modal-02" class="overlay">
-                                <div class="folio-item-table">
-                                    <div class="folio-item-cell">
-                                        <h3 class="folio-title">Shutterbug</h3>
-                                        <span class="folio-types">
-                                            Web Design
-                                        </span>
+        <!-- <div class="folio-item">
+                                <img src="images/portfolio/liberty.jpg" alt="Liberty">
+                                <a class="overlay">
+                                    <div class="folio-item-table">
+                                        <div class="folio-item-cell">
+                                            <h3 class="folio-title">Liberty</h3>
+                                            <span class="folio-types">
+                                                Graphic Design
+                                            </span>
+                                        </div>
                                     </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div> <!-- /folio-item -->
-
-                    <div class="bgrid folio-item">
-                        <div class="item-wrap">
-                            <img src="images/portfolio/clouds.jpg" alt="Clouds">
-                            <a href="#modal-03" class="overlay">
-                                <div class="folio-item-table">
-                                    <div class="folio-item-cell">
-                                        <h3 class="folio-title">Clouds</h3>
-                                        <span class="folio-types">
-                                            Web Design
-                                        </span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div> <!-- /folio-item -->
-
-                    <div class="bgrid folio-item">
-                        <div class="item-wrap">
-                            <img src="images/portfolio/beetle.jpg" alt="Beetle">
-                            <a href="#modal-04" class="overlay">
-                                <div class="folio-item-table">
-                                    <div class="folio-item-cell">
-                                        <h3 class="folio-title">Beetle</h3>
-                                        <span class="folio-types">
-                                            Branding
-                                        </span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div> <!-- /folio-item -->
-
-                    <div class="bgrid folio-item">
-                        <div class="item-wrap">
-                            <img src="images/portfolio/lighthouse.jpg" alt="Lighthouse">
-                            <a href="#modal-05" class="overlay">
-                                <div class="folio-item-table">
-                                    <div class="folio-item-cell">
-                                        <h3 class="folio-title">Lighthouse</h3>
-                                        <span class="folio-types">
-                                            Web Development
-                                        </span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div> <!-- /folio-item -->
-
-                    <div class="bgrid folio-item">
-                        <div class="item-wrap">
-                            <img src="images/portfolio/salad.jpg" alt="Salad">
-                            <a href="#modal-06" class="overlay">
-                                <div class="folio-item-table">
-                                    <div class="folio-item-cell">
-                                        <h3 class="folio-title">Salad</h3>
-                                        <span class="folio-types">
-                                            Branding
-                                        </span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div> <!-- /folio-item -->
-
-                    <!-- modal popups - begin
-	            ============================================================= -->
-
-                </div> <!-- /portfolio-wrapper -->
-
-            </div> <!-- /twelve -->
-
-        </div> <!-- /portfolio-content -->
-
-    </section> <!-- /portfolio -->
-
-
+                                </a>
+                        </div> -->
+        
+                       
+    
+    
     <!-- Contact
-   ================================================== -->
+    ================================================== -->
     <section id="contact">
-
+    
         <div class="row section-intro">
             <div class="col-twelve">
-
+    
                 <h5>Contact</h5>
                 <h1>I'd Love To Hear From You.</h1>
-
+    
                 <p class="lead">Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing dolore officia
                     nisi aliqua incididunt Ut veniam lorem ipsum Consectetur ut in in eu do.</p>
-
+    
             </div>
         </div> <!-- /section-intro -->
-
+    
         <div class="row contact-form">
-
+    
             <div class="col-twelve">
-
+    
                 <!-- form -->
                 <form name="contactForm" id="contactForm" method="post" action="">
                     <fieldset>
-
+    
                         <div class="form-field">
-                            <input name="contactName" type="text" id="contactName" placeholder="Name" value=""
-                                minlength="2" required="">
+                            <input name="contactName" type="text" id="contactName" placeholder="Name" value="" minlength="2"
+                                required="">
                         </div>
                         <div class="form-field">
                             <input name="contactEmail" type="email" id="contactEmail" placeholder="Email" value=""
@@ -499,8 +441,8 @@
                             <input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value="">
                         </div>
                         <div class="form-field">
-                            <textarea name="contactMessage" id="contactMessage" placeholder="message" rows="10"
-                                cols="50" required=""></textarea>
+                            <textarea name="contactMessage" id="contactMessage" placeholder="message" rows="10" cols="50"
+                                required=""></textarea>
                         </div>
                         <div class="form-field">
                             <button class="submitform">Submit</button>
@@ -513,10 +455,10 @@
                                 </div>
                             </div>
                         </div>
-
+    
                     </fieldset>
                 </form> <!-- Form End -->
-
+    
                 <!-- contact-warning -->
                 <div id="message-warning">
                 </div>
@@ -524,71 +466,71 @@
                 <div id="message-success">
                     <i class="fa fa-check"></i>Your message was sent, thank you!<br>
                 </div>
-
+    
             </div> <!-- /col-twelve -->
-
+    
         </div> <!-- /contact-form -->
-
+    
         <div class="row contact-info">
-
+    
             <div class="col-four tab-full">
-
+    
                 <div class="icon">
                     <i class="icon-pin"></i>
                 </div>
-
+    
                 <h5>Where to find me</h5>
-
+    
                 <p>
                     1600 Amphitheatre Parkway<br>
                     Mountain View, CA<br>
                     94043 US
                 </p>
-
+    
             </div>
-
+    
             <div class="col-four tab-full collapse">
-
+    
                 <div class="icon">
                     <i class="icon-mail"></i>
                 </div>
-
+    
                 <h5>Email Me At</h5>
-
+    
                 <p>someone@kardswebsite.com<br>
                     info@kardswebsite.com
                 </p>
-
+    
             </div>
-
+    
             <div class="col-four tab-full">
-
+    
                 <div class="icon">
                     <i class="icon-phone"></i>
                 </div>
-
+    
                 <h5>Call Me At</h5>
-
+    
                 <p>Phone: (+63) 555 1212<br>
                     Mobile: (+63) 555 0100<br>
                     Fax: (+63) 555 0101
                 </p>
-
+    
             </div>
-
+    
         </div> <!-- /contact-info -->
-
+    
     </section> <!-- /contact -->
-
-
+    
+    
     <!-- footer
-   ================================================== -->
-
+           ================================================== -->
+    
     <footer>
         <div class="row">
-
+    
             <div class="col-six tab-full pull-right social">
-
+    
                 <ul class="footer-social">
                     <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                     <li><a href="#"><i class="fa fa-behance"></i></a></li>
@@ -596,25 +538,25 @@
                     <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
                     <li><a href="#"><i class="fa fa-instagram"></i></a></li>
                 </ul>
-
+    
             </div>
-
+    
             <div class="col-six tab-full">
                 <div class="copyright">
                     <span>SOFFIATI Stéphane</span>
                     <span>Design by <a href="http://www.styleshout.com/">styleshout</a></span>
                 </div>
             </div>
-
+    
         </div>
     </footer>
-
+    
     <!-- Java Script
-   ================================================== -->
-
+           ================================================== -->
+    
     <script src="https://unpkg.com/typewriter-effect@2.3.1/dist/core.js"></script>
     <script src="Javascript/script.js" async></script>
-
-</body>
-
-</html>
+    
+    </body>
+    
+    </html>
