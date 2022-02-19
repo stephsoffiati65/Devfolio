@@ -752,12 +752,31 @@ path{
   justify-content: center;
   flex-wrap: wrap;
   padding-bottom: 50px;
+  max-width: 1000px;
+  margin: auto;
 }
 
 .project{
 padding: 0;
 position: relative;
 overflow: hidden;
+}
+
+.project img {
+  width: 500px;
+  height: 500px;
+	vertical-align: middle;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	-webkit-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+
+.project:hover img {
+	-webkit-transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	transform: scale(1.05);
 }
 
 .project .overlay {
@@ -779,35 +798,22 @@ overflow: hidden;
 }
 
 .project .folio-title {
-	color: #FFFFFF;
-	font-size: 3.3rem;
+	color: #ebebeb;
+	font-size: 30px;
 	padding: 0 3rem;
-	margin-bottom: 0;
+	margin-top: 250px;
 }
 
 .project .folio-types {
 	margin: 0;
 	padding: 0;
 	text-transform: uppercase;
-	font-family: "poppins-regular", sans-serif;
-	font-size: 1.2rem;
-	letter-spacing: .1rem;
+	font-family: "poppins", sans-serif;
+	font-size: 20px;
 	color: rgba(255, 255, 255, 0.6);
 }
 
-.project img {
-	vertical-align: middle;
-	-moz-transition: all 0.5s ease-in-out;
-	-o-transition: all 0.5s ease-in-out;
-	-webkit-transition: all 0.5s ease-in-out;
-	-ms-transition: all 0.5s ease-in-out;
-	transition: all 0.5s ease-in-out;
-}
-
-
 .project .folio-item-cell {
-	 display: table-cell;
-	vertical-align: middle;
 	text-align: center;
 	-moz-transition: all 0.5s ease-in-out;
 	-o-transition: all 0.5s ease-in-out;
@@ -823,11 +829,7 @@ overflow: hidden;
  
 }
 
-.project:hover img {
-	-webkit-transform: scale(1.05);
-	-ms-transform: scale(1.05);
-	transform: scale(1.05);
-}
+
 
 
 
