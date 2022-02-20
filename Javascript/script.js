@@ -82,21 +82,36 @@ function toggleLink() {
 
 const path = document.querySelector('path');
 
-// Animations slide-in
-// ==================================================
+// // Animations slide-in
+// // ==================================================
 
 const slidingLeft = document.querySelector('.slide-in-left');
+
 
 window.addEventListener('scroll', () => {
 
     const {scrollTop, clientHeight} = document.documentElement;
-
-
     const topLeft = slidingLeft.getBoundingClientRect().top;
-
 
     if(scrollTop > (scrollTop + topLeft).toFixed() - clientHeight * 0.8){
         slidingLeft.classList.add('active')
+    } else {
+      slidingLeft.classList.remove('active')
+    }
+})
+
+const slidingLeftDos = document.querySelector('.slide-in-left-dos');
+
+
+window.addEventListener('scroll', () => {
+
+    const {scrollTop, clientHeight} = document.documentElement;
+    const topLeft = slidingLeftDos.getBoundingClientRect().top;
+
+    if(scrollTop > (scrollTop + topLeft).toFixed() - clientHeight * 0.8){
+      slidingLeftDos.classList.add('active')
+    } else {
+      slidingLeftDos.classList.remove('active')
     }
 })
 
@@ -105,31 +120,24 @@ const slidingRight = document.querySelector('.slide-in-right');
 window.addEventListener('scroll', () => {
 
     const {scrollTop, clientHeight} = document.documentElement;
-
-
     const topRight = slidingRight.getBoundingClientRect().top;
-
 
     if(scrollTop > (scrollTop + topRight).toFixed() - clientHeight * 0.8){
         slidingRight.classList.add('active')
     }
 })
 
-// const slidingRight = document.querySelector('.slide-in-left');
+const slidingRightDos = document.querySelector('.slide-in-right-dos');
 
-// window.addEventListener('scroll', () => {
+window.addEventListener('scroll', () => {
 
-//     const {scrollTop, clientHeight} = document.documentElement;
+    const {scrollTop, clientHeight} = document.documentElement;
+    const topRight = slidingRightDos.getBoundingClientRect().top;
 
-
-//     const topElementToTopViewport = slidingLeft.getBoundingClientRect().top;
-
-//     console.log(topElementToTopViewport);
-
-//     if(scrollTop > (scrollTop + topElementToTopViewport).toFixed() - clientHeight * 0.8){
-//         slidingLeft.classList.add('active')
-//     }
-// })
+    if(scrollTop > (scrollTop + topRight).toFixed() - clientHeight * 0.8){
+        slidingRightDos.classList.add('active')
+    }
+})
 
 // TypeWriter
 // ==================================================
@@ -197,6 +205,7 @@ window.addEventListener('scroll', () => {
 // ==================================================
 
 const portfolio = document.querySelector('#portfolio');
+const services = document.querySelector('#services');
 const greenBurger = document.querySelector('#greenBurger');
 const blackBurger = document.querySelector('#blackBurger');
 
@@ -216,3 +225,15 @@ window.addEventListener('scroll', () => {
   }
 })
 
+
+window.addEventListener('scroll', () => {
+
+  const { scrollTop, clientHeight } = document.documentElement;
+
+  const topServices = services.getBoundingClientRect().top;
+
+  if (scrollTop > (scrollTop + topServices).toFixed() - clientHeight * 0.1) {
+    greenBurger.style.display = "block";
+    blackBurger.style.display = "none";
+  }
+})

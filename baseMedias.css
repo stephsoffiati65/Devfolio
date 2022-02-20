@@ -102,6 +102,11 @@
     .hrResp{
         display: block;
     }
+
+    .slide-in-right, .slide-in-right-dos, .slide-in-left{
+        transform: none;
+        opacity: 1;
+      }
        
 }
 
@@ -153,8 +158,7 @@
     #career ul li{
     margin-left: 20px;
     font-size: 21px;
-    }
-        
+    }     
  }
 
 /* Compétences
@@ -188,5 +192,22 @@
     .pourcent {
      padding: 0px 90px;
     }       
+}
+
+/* Services
+================================================== */
+
+@media (max-width: 1250px){
+  
+  #servicesGrid{
+    display: block;
+    }
+    
+    #servicesGrid .service{
+        margin: 50px auto;
+        
+        }
+    
+  
 }
 

@@ -259,13 +259,31 @@ path{
 /* A propos
 ================================================== */
 
+#about{
+  background-color: rgb(14,14,14);
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+}
+
 .slide-in-right {
   transform: translateX(+100%);
   opacity: 0;
   transition: transform 1.5s ease-in-out,
-  opacity 2s ease-in-out;
+  opacity 1.5s ease-in-out;
 }
 .slide-in-right.active {
+  transform: translateX(0%);
+  opacity: 1.5;
+}
+
+.slide-in-right-dos {
+  transform: translateX(+100%);
+  opacity: 0;
+  transition: transform 1.5s ease-in-out,
+  opacity 1.5s ease-in-out;
+}
+.slide-in-right-dos.active {
   transform: translateX(0%);
   opacity: 1.5;
 }
@@ -274,14 +292,23 @@ path{
   transform: translateX(-100%);
   opacity: 0;
   transition: transform 1.5s ease-in-out,
-  opacity 2s ease-in-out;
+  opacity 1.5s ease-in-out;
 }
 .slide-in-left.active {
   transform: translateX(0%);
   opacity: 1.5;
 }
 
-
+.slide-in-left-dos{
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: transform 1.5s ease-in-out,
+  opacity 1.5s ease-in-out;
+}
+.slide-in-left-dos.active {
+  transform: translateX(0%);
+  opacity: 1.5;
+}
 
 #career {
  display: flex;
@@ -372,14 +399,6 @@ path{
 
 /* Compétences
 ================================================== */
-
-#about{
-  
-  background-color: rgb(14,14,14);
-	background-size: cover;
-	width: 100%;
-	height: 100%;
-}
 
 #container{
   position: relative;
@@ -736,8 +755,26 @@ overflow: hidden;
 ================================================== */
 
 #services{
-  height: 1000px;
-  background: url(images/bg.png) no-repeat center;
+  background-color: rgb(14,14,14);
+	background-size: cover;
+	width: 100%;
+  padding-bottom: 50px;
+}
+
+#servicesGrid{
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+.service{
+  background-color: #ebebeb;
+  width: 300px;
+  height: 200px;
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
