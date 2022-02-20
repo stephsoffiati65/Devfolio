@@ -53,24 +53,6 @@
 
         </nav>
 
-        <div id="loaderCont">
-            <div class="loader">
-                <div id="contain">
-                    <img src="images/logo2.png" alt="logo">
-                </div>
-                <span style="--i:1;"></span>
-                <span style="--i:2;"></span>
-                <span style="--i:3;"></span>
-                <span style="--i:4;"></span>
-                <span style="--i:5;"></span>
-                <span style="--i:6;"></span>
-                <span style="--i:7;"></span>
-                <span style="--i:8;"></span>
-                <span style="--i:9;"></span>
-                <span style="--i:10;"></span>
-            </div>
-        </div>
-
         <div id="name">
 
             <h1>
@@ -173,7 +155,7 @@
         </div>
     </header>
 
-
+    <hr>
 
     <!-- A propos
    ================================================== -->
@@ -184,7 +166,7 @@
 
         <hr class="hrTitle ">
 
-        <div id="career">
+        <div class="slide-in-right" id="career">
 
             <div id="photo">
                 <img src="images/Profil2.jpg" alt="Photo de profil"><br>
@@ -341,15 +323,15 @@
 
     <!-- Portfolio
    ================================================== -->
-   
+
     <section id="portfolio">
-    
-        <h2>PORTFOLIO</h2>
-    
+
+        <h2 >PORTFOLIO</h2>
+
         <hr class="hrTitle2 ">
-    
-        <div id="projectGrid">
-    
+
+        <div class="slide-in-left" id="projectGrid">
+
             <div class="project">
                 <img src="images/portfolio/ambiance.jpg" alt="Liberty">
                 <a class="overlay">
@@ -428,39 +410,50 @@
                     </div>
                 </a>
             </div>
-    
+
         </div>
-    
+
+    </section>
+
+    <!-- Services
+    ================================================== -->
+
+    <section id="services">
+
+        <h2 class="grey">SERVICES</h2>
+
+        <hr class="hrTitle ">
+
     </section>
 
 
     <!-- Contact
     ================================================== -->
     <section id="contact">
-    
+
         <div class="row section-intro">
             <div class="col-twelve">
-    
+
                 <h5>Contact</h5>
                 <h1>I'd Love To Hear From You.</h1>
-    
+
                 <p class="lead">Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing dolore officia
                     nisi aliqua incididunt Ut veniam lorem ipsum Consectetur ut in in eu do.</p>
-    
+
             </div>
         </div> <!-- /section-intro -->
-    
+
         <div class="row contact-form">
-    
+
             <div class="col-twelve">
-    
+
                 <!-- form -->
                 <form name="contactForm" id="contactForm" method="post" action="">
                     <fieldset>
-    
+
                         <div class="form-field">
-                            <input name="contactName" type="text" id="contactName" placeholder="Name" value="" minlength="2"
-                                required="">
+                            <input name="contactName" type="text" id="contactName" placeholder="Name" value=""
+                                minlength="2" required="">
                         </div>
                         <div class="form-field">
                             <input name="contactEmail" type="email" id="contactEmail" placeholder="Email" value=""
@@ -470,8 +463,8 @@
                             <input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value="">
                         </div>
                         <div class="form-field">
-                            <textarea name="contactMessage" id="contactMessage" placeholder="message" rows="10" cols="50"
-                                required=""></textarea>
+                            <textarea name="contactMessage" id="contactMessage" placeholder="message" rows="10"
+                                cols="50" required=""></textarea>
                         </div>
                         <div class="form-field">
                             <button class="submitform">Submit</button>
@@ -484,10 +477,10 @@
                                 </div>
                             </div>
                         </div>
-    
+
                     </fieldset>
                 </form> <!-- Form End -->
-    
+
                 <!-- contact-warning -->
                 <div id="message-warning">
                 </div>
@@ -495,71 +488,71 @@
                 <div id="message-success">
                     <i class="fa fa-check"></i>Your message was sent, thank you!<br>
                 </div>
-    
+
             </div> <!-- /col-twelve -->
-    
+
         </div> <!-- /contact-form -->
-    
+
         <div class="row contact-info">
-    
+
             <div class="col-four tab-full">
-    
+
                 <div class="icon">
                     <i class="icon-pin"></i>
                 </div>
-    
+
                 <h5>Where to find me</h5>
-    
+
                 <p>
                     1600 Amphitheatre Parkway<br>
                     Mountain View, CA<br>
                     94043 US
                 </p>
-    
+
             </div>
-    
+
             <div class="col-four tab-full collapse">
-    
+
                 <div class="icon">
                     <i class="icon-mail"></i>
                 </div>
-    
+
                 <h5>Email Me At</h5>
-    
+
                 <p>someone@kardswebsite.com<br>
                     info@kardswebsite.com
                 </p>
-    
+
             </div>
-    
+
             <div class="col-four tab-full">
-    
+
                 <div class="icon">
                     <i class="icon-phone"></i>
                 </div>
-    
+
                 <h5>Call Me At</h5>
-    
+
                 <p>Phone: (+63) 555 1212<br>
                     Mobile: (+63) 555 0100<br>
                     Fax: (+63) 555 0101
                 </p>
-    
+
             </div>
-    
+
         </div> <!-- /contact-info -->
-    
+
     </section> <!-- /contact -->
-    
-    
+
+
     <!-- footer
            ================================================== -->
-    
+
     <footer>
         <div class="row">
-    
+
             <div class="col-six tab-full pull-right social">
-    
+
                 <ul class="footer-social">
                     <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                     <li><a href="#"><i class="fa fa-behance"></i></a></li>
@@ -567,25 +560,25 @@
                     <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
                     <li><a href="#"><i class="fa fa-instagram"></i></a></li>
                 </ul>
-    
+
             </div>
-    
+
             <div class="col-six tab-full">
                 <div class="copyright">
                     <span>SOFFIATI Stéphane</span>
                     <span>Design by <a href="http://www.styleshout.com/">styleshout</a></span>
                 </div>
             </div>
-    
+
         </div>
     </footer>
-    
+
     <!-- Java Script
            ================================================== -->
-    
+
     <script src="https://unpkg.com/typewriter-effect@2.3.1/dist/core.js"></script>
     <script src="Javascript/script.js" async></script>
-    
-    </body>
-    
-    </html>
+
+</body>
+
+</html>

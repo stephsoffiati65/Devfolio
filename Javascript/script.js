@@ -1,24 +1,4 @@
 
-// Particules et Header
-// ==================================================
-
-let loader = document.querySelector('#loaderCont');
-let blocName = document.querySelector('#name');
-
-function showContent() {
-  loader.classList.add('hidden');
-}
-
-setTimeout(showContent, 3000)
-
-window.onload = function () {
-  setTimeout(function () {
-    blocName.style.display = "block";
-  }, 3000);
-}
-
-
-
 // Animation burger
 // ==================================================
 
@@ -102,6 +82,54 @@ function toggleLink() {
 
 const path = document.querySelector('path');
 
+// Animations slide-in
+// ==================================================
+
+const slidingLeft = document.querySelector('.slide-in-left');
+
+window.addEventListener('scroll', () => {
+
+    const {scrollTop, clientHeight} = document.documentElement;
+
+
+    const topLeft = slidingLeft.getBoundingClientRect().top;
+
+
+    if(scrollTop > (scrollTop + topLeft).toFixed() - clientHeight * 0.8){
+        slidingLeft.classList.add('active')
+    }
+})
+
+const slidingRight = document.querySelector('.slide-in-right');
+
+window.addEventListener('scroll', () => {
+
+    const {scrollTop, clientHeight} = document.documentElement;
+
+
+    const topRight = slidingRight.getBoundingClientRect().top;
+
+
+    if(scrollTop > (scrollTop + topRight).toFixed() - clientHeight * 0.8){
+        slidingRight.classList.add('active')
+    }
+})
+
+// const slidingRight = document.querySelector('.slide-in-left');
+
+// window.addEventListener('scroll', () => {
+
+//     const {scrollTop, clientHeight} = document.documentElement;
+
+
+//     const topElementToTopViewport = slidingLeft.getBoundingClientRect().top;
+
+//     console.log(topElementToTopViewport);
+
+//     if(scrollTop > (scrollTop + topElementToTopViewport).toFixed() - clientHeight * 0.8){
+//         slidingLeft.classList.add('active')
+//     }
+// })
 
 // TypeWriter
 // ==================================================
