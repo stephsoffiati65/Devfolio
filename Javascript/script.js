@@ -95,8 +95,6 @@ window.addEventListener('scroll', () => {
 
     if(scrollTop > (scrollTop + topLeft).toFixed() - clientHeight * 0.8){
         slidingLeft.classList.add('active')
-    } else {
-      slidingLeft.classList.remove('active')
     }
 })
 
@@ -110,8 +108,6 @@ window.addEventListener('scroll', () => {
 
     if(scrollTop > (scrollTop + topLeft).toFixed() - clientHeight * 0.8){
       slidingLeftDos.classList.add('active')
-    } else {
-      slidingLeftDos.classList.remove('active')
     }
 })
 
@@ -189,16 +185,7 @@ window.addEventListener('scroll', () => {
     java.classList.add('scroll');
     node.classList.add('scroll');
     react.classList.add('scroll');
-  } else {
-    html.classList.remove('scroll');
-    css.classList.remove('scroll');
-    js.classList.remove('scroll');
-    wp.classList.remove('scroll');
-    bs.classList.remove('scroll');
-    java.classList.remove('scroll');
-    node.classList.remove('scroll');
-    react.classList.remove('scroll');
-  }
+  } 
 })
 
 // Portfolio
