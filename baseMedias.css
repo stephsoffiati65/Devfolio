@@ -57,12 +57,12 @@
 
 
     svg{
-      width: 330px;
+      width: 380px;
     }
 
     .paragraph{
         letter-spacing: 0;
-        font-size: 12px;
+        font-size: 15px;
     }
 
     #contain img {
