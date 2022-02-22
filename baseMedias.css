@@ -197,17 +197,38 @@
 /* Services
 ================================================== */
 
-@media (max-width: 1250px){
+
+@media (max-width: 1440px){
   
-  #servicesGrid{
-    display: block;
-    }
-    
-    #servicesGrid .service{
-        margin: 50px auto;
+    .serviceContainer {
         
-        }
-    
-  
+        width: 40%;
+        
+      }      
 }
 
+@media (max-width: 1000px){
+  
+    .serviceContainer {
+        
+        width: 60%;
+        min-width: 0;
+    } 
+    
+    .content h3 {
+        font-size: 20px;
+    } 
+}
+
+@media (max-width: 628px){
+
+    .serviceContainer {
+        
+        width: 80%;
+        min-width: 0;
+    } 
+  
+    .content h3 {
+        font-size: 18px;
+    }    
+}

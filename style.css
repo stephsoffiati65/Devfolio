@@ -59,6 +59,33 @@ a {
   margin: 0 auto 50px auto;
 }
 
+.classic{
+  margin-top: 40px;
+  padding: 20px;
+  font-size: 12px;
+  letter-spacing: 5px;
+  background: transparent;
+  border: 1px solid #ebebeb;
+}
+
+.classic:hover{
+  border: 1px solid #B0F2B6;
+}
+
+.classic2{
+  margin-top: 40px;
+  padding: 10px;
+  font-size: 10px;
+  letter-spacing: 5px;
+  color: rgb(14,14,14);
+  background: transparent;
+  border: 1px solid #ebebeb;
+}
+
+.classic2:hover{
+  border: 1px solid rgb(14,14,14);
+}
+
 .strong{
   font-weight: bold;
 }
@@ -206,19 +233,6 @@ header {
   width: 150px;
   margin-bottom: 30px;
   padding-top: 8%;
-}
-
-.classic{
-  margin-top: 40px;
-  padding: 20px;
-  font-size: 12px;
-  letter-spacing: 5px;
-  background: transparent;
-  border: 1px solid #ebebeb;
-}
-
-.classic:hover{
-  border: 1px solid #B0F2B6;
 }
 
 #networks{
@@ -767,7 +781,6 @@ overflow: hidden;
 }
 
 #cardSection {
-  height: 100vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -776,14 +789,18 @@ overflow: hidden;
 .serviceContainer {
   perspective: 1000px;
   height: 28vh;
-  width: 25%;
+  width: 26%;
+  min-width: 380px;
+  margin: 50px;
 }
+
 .card {
   transform-style: preserve-3d;
   height: 100%;
   width: 100%;
   transition: 0.5s ease;
 }
+
 .front,
 .back {
   height: 100%;
@@ -801,8 +818,8 @@ overflow: hidden;
   backface-visibility: hidden;
 }
 .front {
-  background: linear-gradient(to right,  #B0F2B6, #4e6b50);
-  color: #ffffff;
+  background: linear-gradient(to right,  #a3e0a8, #79a57d);
+  color:rgba(14, 14, 14, 0.822);;
 }
 .front img {
   width: 5em;
@@ -810,12 +827,17 @@ overflow: hidden;
 .content {
   transform: translateZ(60px);
 }
+
+.content a{
+  color: rgb(14,14,14);
+}
 .content h3 {
   font-size: 22px;
   margin-top: 1em;
   font-weight: 600;
   letter-spacing: 0.04em;
 }
+
 .content p {
   font-size: 14px;
   line-height: 2em;
@@ -828,14 +850,4 @@ overflow: hidden;
 }
 .serviceContainer:hover .card {
   transform: rotateX(180deg);
-}
-@media screen and (min-width: 992px) {
-  section {
-    padding: 0 1em;
-  }
-  .serviceContainer {
-    flex-basis: 0 0 33.33%;
-    max-width: 33.33%;
-    padding: 0 1.5em;
-  }
 }
