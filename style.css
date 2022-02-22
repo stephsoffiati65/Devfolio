@@ -82,10 +82,6 @@ a {
   border: 1px solid #ebebeb;
 }
 
-.classic2:hover{
-  border: 1px solid rgb(14,14,14);
-}
-
 .strong{
   font-weight: bold;
 }
@@ -851,3 +847,22 @@ overflow: hidden;
 .serviceContainer:hover .card {
   transform: rotateX(180deg);
 }
+
+/* Contact
+================================================== */
+
+#contact{
+  height: 1000px;
+  background-color: #ebebeb;
+}
+
+
+
+/* Footer
+================================================== */
+
+#footer{
+  height: 100px;
+  background-color: rgb(14,14,14);
+}
+
