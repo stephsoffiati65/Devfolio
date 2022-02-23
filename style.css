@@ -20,7 +20,7 @@ html{
 	scroll-behavior:smooth;
 }
 
-h1, h2 {
+h1, h2, h3 {
   font-family: "Poppins";
   letter-spacing: 5px;
 }
@@ -226,8 +226,8 @@ header {
 }
 
 #logo{
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   margin-bottom: 30px;
   margin-top: 8%;
   padding: 30px;
@@ -860,12 +860,55 @@ overflow: hidden;
   transform: rotateX(180deg);
 }
 
+/* Etapes
+================================================== */
+
+#etapes{
+  height: 300px;
+  background-color: #ebebeb;
+}
+
+#stepsContainer{
+  display: flex;
+  justify-content: space-around;
+}
+
+#stepsContainer ul{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#stepsContainer ul li{
+  list-style-type: none;
+  background-color: rgb(14,14,14);
+  padding: 10px;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+}
+
+#stepsContainer ul li i{
+  font-size: 50px;
+  color: #B0F2B6;
+}
+
+#stepsContainer ul h3{
+ margin-top: 10px;
+}
+
+
 /* Contact
 ================================================== */
 
 #contact{
   height: 1000px;
-  background-color: #ebebeb;
+  background-color: rgb(14,14,14);
 }
 
 
@@ -875,6 +918,6 @@ overflow: hidden;
 
 #footer{
   height: 100px;
-  background-color: rgb(14,14,14);
+  background-color: #B0F2B6;
 }
 
