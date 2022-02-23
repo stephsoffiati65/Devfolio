@@ -264,5 +264,8 @@
         height: 300px;  
       }
       
+      .project .folio-title {
+        margin-top: 100px
+    }
 }
 

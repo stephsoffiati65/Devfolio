@@ -226,9 +226,14 @@ header {
 }
 
 #logo{
-  width: 150px;
+  width: 100px;
+  height: 100px;
   margin-bottom: 30px;
-  padding-top: 8%;
+  margin-top: 8%;
+  padding: 30px;
+  border: 2px solid #B0F2B6;
+  background-color: #ebebeb2a;
+  border-radius: 50%;
 }
 
 #CTA{
