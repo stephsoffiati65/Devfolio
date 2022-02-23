@@ -257,6 +257,12 @@
   
      #projectGrid {
         width: 90%;
-     }   
+     }
+     
+     .project img {
+        width: 300px;
+        height: 300px;  
+      }
+      
 }
 
