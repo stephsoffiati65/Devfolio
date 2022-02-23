@@ -73,13 +73,24 @@ a {
 }
 
 .classic2{
-  margin-top: 40px;
+  margin-top: 20px;
   padding: 10px;
   font-size: 10px;
   letter-spacing: 5px;
   color: rgb(14,14,14);
   background: transparent;
+  border: 2px solid #ebebeb;
+}
+
+.circle{
+  width: 15px;
+  padding: 5px;
   border: 1px solid #ebebeb;
+  color: rgb(14,14,14);
+  border-radius: 50%;
+  background-color: #ebebeb;
+  font-size: 12px;
+  margin-top: 10px;
 }
 
 .strong{
@@ -101,6 +112,7 @@ a {
 .none{
   display: none;
 }
+
 
 /* Burger navigation
 ================================================== */
@@ -864,13 +876,15 @@ overflow: hidden;
 ================================================== */
 
 #etapes{
-  height: 300px;
   background-color: #ebebeb;
+  padding-bottom: 50px;
 }
 
 #stepsContainer{
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
 }
 
 #stepsContainer ul{
@@ -883,8 +897,8 @@ overflow: hidden;
   list-style-type: none;
   background-color: rgb(14,14,14);
   padding: 10px;
-  height: 80px;
-  width: 80px;
+  height: 100px;
+  width: 100px;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -893,14 +907,20 @@ overflow: hidden;
   margin: auto;
 }
 
-#stepsContainer ul li i{
+/* #stepsContainer ul li i{
   font-size: 50px;
   color: #B0F2B6;
-}
+} */
 
 #stepsContainer ul h3{
  margin-top: 10px;
+ font-weight: bold;
 }
+
+#stepsContainer ul img{
+  margin: auto;
+  width: 60px;
+ }
 
 
 /* Contact
@@ -910,7 +930,6 @@ overflow: hidden;
   height: 1000px;
   background-color: rgb(14,14,14);
 }
-
 
 
 /* Footer
