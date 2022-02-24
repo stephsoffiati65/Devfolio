@@ -240,7 +240,16 @@ header {
 
 #logo{
   width: 250px;
-  margin-top: 4%;
+  margin-top: 4.5%;
+  border-radius: 50%;
+  box-shadow:
+    0 0 8px #fff,
+    inset 0 0 8px #fff,
+    0 0 16px #B0F2B6,
+    inset 0 0 16px #B0F2B6,
+    0 0 32px #B0F2B6,
+    inset 0 0 32px #B0F2B6; 
+ background-color: #ffffff13;
 }
 
 #CTA{
@@ -926,6 +935,10 @@ overflow: hidden;
   align-items: center;
 }
 
+#contacts iframe {
+  margin-bottom: 50px;
+}
+
 #contacts ul{
   display: flex;
   flex-direction: column;
@@ -935,10 +948,7 @@ overflow: hidden;
   list-style-type: none;
   text-align: center;
   margin-bottom: 50px;
-}
-
-#contacts iframe {
-  margin-bottom: 50px;
+  font-size: 30px;
 }
 
 #contacts ul li h3{
@@ -947,6 +957,10 @@ overflow: hidden;
 
 #contacts ul li img{
   width: 100px;
+}
+
+#contacts ul li p{
+  font-size: 20px;
 }
 
 /* Footer

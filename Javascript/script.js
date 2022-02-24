@@ -193,6 +193,8 @@ window.addEventListener('scroll', () => {
 
 const portfolio = document.querySelector('#portfolio');
 const services = document.querySelector('#services');
+const etapes = document.querySelector('#etapes');
+const contact = document.querySelector('#contact');
 const greenBurger = document.querySelector('#greenBurger');
 const blackBurger = document.querySelector('#blackBurger');
 
@@ -224,3 +226,30 @@ window.addEventListener('scroll', () => {
     blackBurger.style.display = "none";
   }
 })
+
+
+window.addEventListener('scroll', () => {
+
+  const { scrollTop, clientHeight } = document.documentElement;
+
+  const topEtapes = etapes.getBoundingClientRect().top;
+
+  if (scrollTop > (scrollTop + topEtapes).toFixed() - clientHeight * 0.05) {
+    greenBurger.style.display = "none";
+    blackBurger.style.display = "block";
+  }
+})
+
+
+window.addEventListener('scroll', () => {
+
+  const { scrollTop, clientHeight } = document.documentElement;
+
+  const topContact = contact.getBoundingClientRect().top;
+
+  if (scrollTop > (scrollTop + topContact).toFixed() - clientHeight * 0.1) {
+    greenBurger.style.display = "block";
+    blackBurger.style.display = "none";
+  }
+})
+
