@@ -230,22 +230,17 @@ a {
 ================================================== */
 
 header {
-	background: url(images/intro-bg.jpg) no-repeat center;
+	background: url(images/intro-bg.jpg) no-repeat center ;
 	background-size: cover;
+  filter: blur(0.5);
 	width: 100%;
 	height: 100%;
 	text-align: center;
 }
 
 #logo{
-  width: 80px;
-  height: 80px;
-  margin-bottom: 30px;
-  margin-top: 8%;
-  padding: 30px;
-  border: 2px solid #B0F2B6;
-  background-color: #ebebeb2a;
-  border-radius: 50%;
+  width: 250px;
+  margin-top: 4%;
 }
 
 #CTA{
@@ -907,11 +902,6 @@ overflow: hidden;
   margin: auto;
 }
 
-/* #stepsContainer ul li i{
-  font-size: 50px;
-  color: #B0F2B6;
-} */
-
 #stepsContainer ul h3{
  margin-top: 10px;
  font-weight: bold;
@@ -927,10 +917,37 @@ overflow: hidden;
 ================================================== */
 
 #contact{
-  height: 1000px;
   background-color: rgb(14,14,14);
 }
 
+#contacts{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#contacts ul{
+  display: flex;
+  flex-direction: column;
+}
+
+#contacts ul li {
+  list-style-type: none;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+#contacts iframe {
+  margin-bottom: 50px;
+}
+
+#contacts ul li h3{
+ margin: 20px auto;
+}
+
+#contacts ul li img{
+  width: 100px;
+}
 
 /* Footer
 ================================================== */

@@ -24,6 +24,10 @@
     .paragraph{
         line-height: 30px;
     }
+
+    #logo{
+        width: 200px;
+    }
 }
 
 @media (max-width: 740px){
@@ -57,7 +61,7 @@
 
 
     svg{
-      width: 380px;
+      width: 350px;
     }
 
     .paragraph{
@@ -71,8 +75,7 @@
     }
 
     #logo{
-        width: 60px;
-        height: 60px;
+        width: 160px;
         margin-bottom: 0px;
     }
 
@@ -297,4 +300,28 @@
     } 
 }
 
+/* Contact
+================================================== */
+
+@media (max-width: 1000px){
+  
+  #contacts iframe {
+    width: 40%;
+  }  
+}
+
+@media (max-width: 750px){
+  
+    #contacts{
+      display: block;
+      text-align: center;
+    }
+
+    #contacts iframe {
+        width: 80%;
+        margin: auto;
+        margin-bottom: 50px;
+      }
+    
+  }
 
