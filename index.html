@@ -47,7 +47,7 @@
                 <li><a id="a1" href="#top" data-text="ACCUEIL">ACCUEIL</a></li>
                 <li><a id="a2" href="#about" data-text="A PROPOS">A PROPOS </a></li>
                 <li><a id="a3" href="#competences" data-text="COMPÉTENCES">COMPÉTENCES</a></li>
-                <li><a id="a4" href="#portfolio" data-text="PROJETS">PROJETS</a></li>
+                <li><a id="a4" href="#projets" data-text="PROJETS">PROJETS</a></li>
                 <li><a id="a5" href="#services" data-text="SERVICES">SERVICES</a></li>
                 <li><a id="a6" href="#contact" data-text="CONTACT">CONTACT</a></li>
             </ul>
@@ -57,7 +57,10 @@
         <div id="name">
 
             <h1>
-                <img id="logo" src="images/logo.png" alt="logo"> <br>
+                <div id="halo">
+                    <img id="logo" src="images/logo.png" alt="logo">
+                </div>
+
 
                 <svg width="581" height="64" viewBox="0 0 581 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <mask id="path-1-outside-1_2_3" maskUnits="userSpaceOnUse" x="-0.35199" y="0.671997" width="581"
@@ -134,30 +137,35 @@
                     <path d="M579.002 17.392V62H573.178V17.392H579.002Z" stroke="#EBEBEB" stroke-width="2"
                         mask="url(#path-1-outside-1_2_3)" />
                 </svg>
-
             </h1>
 
-            <p class="paragraph">
-                <span class="green">|</span> DÉVELOPPEUR WEB FRONT-END JUNIOR <span class="green">|</span> <br
-                    class="none jumpDev">
-                DÉVELOPPEUR WORDPRESS JUNIOR </span> <br class="none jumpDev"><span class="green">|</span> FREELANCE
-                <span class="green">|</span>
-            </p>
+            <div id="info">
 
-            <div id="CTA">
-                <button id="more" class="classic"><a href="#about">EN SAVOIR PLUS</a> </button>
-                <button class="classic"><a href="#contact">ME CONTACTER</a> </button>
+                <p class="paragraph">
+                    <span class="green">|</span> DÉVELOPPEUR WEB FRONT-END JUNIOR <span class="green">|</span> <br
+                        class="none jumpDev">
+                    DÉVELOPPEUR WORDPRESS JUNIOR </span> <br class="none jumpDev"><span class="green">|</span> FREELANCE
+                    <span class="green">|</span>
+                </p>
+
+                <div id="CTA">
+                    <button id="more" class="classic"><a href="#about">EN SAVOIR PLUS</a> </button>
+                    <button class="classic"><a href="#contact">ME CONTACTER</a> </button>
+                </div>
+
             </div>
 
-            <ul id="networks">
-                <li><a href="https://www.facebook.com/steph.soffiati.1" target="_blank"><i
-                            class="fab fa-facebook-f"></i></a></li>
-                <li><a href="https://github.com/stephsoffiati65" target="_blank"><i class="fab fa-github"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/stephsof/" target="_blank"><i
-                            class="fab fa-linkedin-in"></i></a></li>
-                <li><a href="https://www.instagram.com/soffiato_depoinzero/" target="_blank"><i
-                            class="fab fa-instagram"></i></a></li>
-            </ul>
+        </div>
+
+        <ul id="networks">
+            <li><a href="https://www.facebook.com/steph.soffiati.1" target="_blank"><i
+                        class="fab fa-facebook-f"></i></a></li>
+            <li><a href="https://github.com/stephsoffiati65" target="_blank"><i class="fab fa-github"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/stephsof/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </li>
+            <li><a href="https://www.instagram.com/soffiato_depoinzero/" target="_blank"><i
+                        class="fab fa-instagram"></i></a></li>
+        </ul>
         </div>
 
         <hr class="hrHead">
@@ -338,10 +346,10 @@
         </section><!-- Compétences -->
     </section><!-- About -->
 
-    <!-- Portfolio
+    <!-- Projets
    ================================================== -->
 
-    <section id="portfolio">
+    <section id="projets">
 
         <h2>PROJETS</h2>
 
@@ -578,27 +586,27 @@
 
         <div id="stepsContainer">
             <ul>
-                <li class="step"><img src="images/contact.png" alt="contact"><span class="circle" >1</span></li>
+                <li class="step"><img src="images/contact.png" alt="contact"><span class="circle">1</span></li>
                 <h3>CONTACT</h3>
             </ul>
             <ul>
-                <li class="step"><img src="images/devis.png" alt="devis"><span class="circle" >2</span></li>
+                <li class="step"><img src="images/devis.png" alt="devis"><span class="circle">2</span></li>
                 <h3> DEVIS</h3>
             </ul>
             <ul>
-                <li class="step"><img src="images/echange.png" alt="échanges"><span class="circle" >3</span></li>
+                <li class="step"><img src="images/echange.png" alt="échanges"><span class="circle">3</span></li>
                 <h3>ÉCHANGES</h3>
             </ul>
             <ul>
-                <li class="step"><img src="images/realisation.png" alt="realisation"><span class="circle" >4</span> </li>
+                <li class="step"><img src="images/realisation.png" alt="realisation"><span class="circle">4</span> </li>
                 <h3>RÉALISATION</h3>
             </ul>
             <ul>
-                <li class="step"><img src="images/validation.png" alt="validation"><span class="circle" >5</span> </li>
+                <li class="step"><img src="images/validation.png" alt="validation"><span class="circle">5</span> </li>
                 <h3>VALIDATION</h3>
             </ul>
             <ul>
-                <li class="step"><img src="images/livraison.png" alt="livraison"><span class="circle" >6</span> </li>
+                <li class="step"><img src="images/livraison.png" alt="livraison"><span class="circle">6</span> </li>
                 <h3>LIVRAISON</h3>
             </ul>
         </div>
@@ -615,9 +623,10 @@
         <hr class="hrTitle ">
 
         <div id="contacts">
-            
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2914.62463602588!2d0.14879121570923257!3d43.07036159793984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a831d8f5f7a0ed%3A0x7ca1793289971bcb!2s17%20Rue%20de%20l&#39;%C3%89galit%C3%A9%2C%2065200%20Bagn%C3%A8res-de-Bigorre!5e0!3m2!1sfr!2sfr!4v1645638582915!5m2!1sfr!2sfr" 
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2914.62463602588!2d0.14879121570923257!3d43.07036159793984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a831d8f5f7a0ed%3A0x7ca1793289971bcb!2s17%20Rue%20de%20l&#39;%C3%89galit%C3%A9%2C%2065200%20Bagn%C3%A8res-de-Bigorre!5e0!3m2!1sfr!2sfr!4v1645638582915!5m2!1sfr!2sfr"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
             <ul>
                 <li class="grey detailContact">
@@ -629,8 +638,9 @@
                     <img src="images/mail.png" alt="adresse mail">
                     <h3>MAIL</h3>
                     <p class="classic"><a href="mailto:soffiati.dev@gmail.com">soffiati.dev@gmail.com</a></p>
-                </li></ul>
-                <ul>
+                </li>
+            </ul>
+            <ul>
                 <li class="grey detailContact">
                     <img src="images/phone-call.png" alt="">
                     <h3>TÉLÉPHONE</h3>
@@ -643,13 +653,13 @@
                 </li>
             </ul>
 
-            
+
 
         </div>
 
     </section>
 
-   
+
 
     <!-- Footer
     ================================================== -->

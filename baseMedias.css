@@ -28,6 +28,11 @@
     #logo{
         width: 200px;
     }
+
+    #halo{
+        width: 200px;
+        height: 200px;
+    }
 }
 
 @media (max-width: 740px){
@@ -77,6 +82,11 @@
     #logo{
         width: 140px;
         margin-bottom: 0px;
+    }
+
+    #halo{
+        width: 140px;
+        height: 140px;
     }
 
     #career img {
@@ -210,7 +220,7 @@
     }       
 }
 
-/* Portfolio
+/* Projets
 ================================================== */
 
 @media (max-width: 550px){
@@ -275,7 +285,7 @@
 }
 
 
-/* Portfolio
+/* Etapes
 ================================================== */
 
 @media (max-width: 1200px){

@@ -238,18 +238,33 @@ header {
 	text-align: center;
 }
 
+#name{
+  padding-top: 4.5%;
+}
+
 #logo{
   width: 250px;
-  margin-top: 4.5%;
+}
+
+#halo{
+  width: 250px;
+  height: 250px;
+  margin: 0 auto 10px auto;
   border-radius: 50%;
   box-shadow:
     0 0 8px #fff,
     inset 0 0 8px #fff,
-    0 0 16px #B0F2B6,
+    0 0 25px #B0F2B6,
     inset 0 0 16px #B0F2B6,
     0 0 32px #B0F2B6,
     inset 0 0 32px #B0F2B6; 
  background-color: #ffffff13;
+
+}
+
+@keyframes opacityInfo {
+  0%   { opacity: 0%; }
+  100% { opacity: 100%; }
 }
 
 #CTA{
@@ -258,6 +273,7 @@ header {
   width:400px;
   margin: auto;
 }
+
 
 #networks{
   display: flex;
@@ -278,13 +294,18 @@ header {
   color: #B0F2B6;
 }
 
+.hrHead{
+  width: 80%;
+  margin: 55px auto 0 auto;
+}
+
 /* Animation SVG Nom prénom*/
 
 
 path{
     stroke-dasharray: 2333px;
     stroke-dashoffset: 2333px;
-    animation: anim 40s ease forwards;
+    animation: anim 40s ease forwards, opacityPath 4s ease-in-out;
 }
 
 @keyframes anim {
@@ -293,9 +314,29 @@ path{
     }
 }
 
-.hrHead{
-  width: 80%;
-  margin: 55px auto 0 auto;
+@keyframes opacityPath {
+  0%   { opacity: 0%; }
+  100% { opacity: 100%; }
+}
+
+/* Animation Info au chargement*/
+
+ #info {
+ animation: opacityInfo 8s ease-in-out;
+}
+
+@keyframes opacityInfo {
+  0%   { opacity: 0%; }
+  100% { opacity: 100%; }
+}
+
+#logo {
+  animation: opacityLogo 8s ease-in-out;
+}
+
+@keyframes opacityLogo {
+  0%   { opacity: 0%; }
+  100% { opacity: 100%; }
 }
 
 /* A propos
@@ -704,10 +745,10 @@ path{
   }
 }
 
-/* Portfolio
+/* Projets
 ================================================== */
 
-#portfolio{
+#projets{
   background: #ebebeb;
 }
 
