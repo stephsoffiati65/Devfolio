@@ -75,7 +75,7 @@
     }
 
     #logo{
-        width: 160px;
+        width: 140px;
         margin-bottom: 0px;
     }
 
@@ -303,25 +303,43 @@
 /* Contact
 ================================================== */
 
-@media (max-width: 1000px){
-  
-  #contacts iframe {
-    width: 40%;
-  }  
-}
-
-@media (max-width: 750px){
+@media (max-width: 1300px){
   
     #contacts{
-      display: block;
-      text-align: center;
-    }
+        display: block;
+        text-align: center;
+      } 
+      
+      #contacts ul li p{
+        width: 40%;
+      }
+  }
+
+
+@media (max-width: 780px){
+  
+    #contacts ul li p{
+        width: 60%;
+      }
 
     #contacts iframe {
         width: 80%;
         margin: auto;
         margin-bottom: 50px;
       }
-    
+  }
+
+  @media (max-width: 550px){
+  
+    #contacts ul li p{
+        width: 80%;
+      }
+  }
+
+  @media (max-width: 390px){
+  
+    #contacts ul li img{
+        width: 80px;
+    }
   }
 

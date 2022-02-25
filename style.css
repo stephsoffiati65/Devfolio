@@ -948,11 +948,11 @@ overflow: hidden;
   list-style-type: none;
   text-align: center;
   margin-bottom: 50px;
-  font-size: 30px;
 }
 
 #contacts ul li h3{
  margin: 20px auto;
+ font-size: 25px;
 }
 
 #contacts ul li img{
@@ -960,7 +960,8 @@ overflow: hidden;
 }
 
 #contacts ul li p{
-  font-size: 20px;
+  font-size: 18px;
+  margin: auto;
 }
 
 /* Footer
