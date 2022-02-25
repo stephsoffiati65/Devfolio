@@ -262,11 +262,6 @@ header {
 
 }
 
-@keyframes opacityInfo {
-  0%   { opacity: 0%; }
-  100% { opacity: 100%; }
-}
-
 #CTA{
   display: flex;
   justify-content: space-around;
@@ -322,7 +317,7 @@ path{
 /* Animation Info au chargement*/
 
  #info {
- animation: opacityInfo 8s ease-in-out;
+ animation: opacityInfo 6s ease-in-out;
 }
 
 @keyframes opacityInfo {
@@ -331,7 +326,7 @@ path{
 }
 
 #logo {
-  animation: opacityLogo 8s ease-in-out;
+  animation: opacityLogo 6s ease-in-out;
 }
 
 @keyframes opacityLogo {
@@ -923,14 +918,13 @@ overflow: hidden;
 
 #etapes{
   background-color: #ebebeb;
-  padding-bottom: 50px;
 }
 
 #stepsContainer{
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  margin-bottom: 50px;
+  padding: 50px 0px;
 }
 
 #stepsContainer ul{
@@ -962,6 +956,41 @@ overflow: hidden;
   margin: auto;
   width: 60px;
  }
+
+
+/* Animation étapes */
+
+ #stepsContainer ul:nth-child(1).scrollStep{
+  animation: opacityContact 0s ease-in-out;
+}
+
+#stepsContainer ul:nth-child(2).scrollStep{
+  animation: opacity 2s ease-in-out;
+}
+
+#stepsContainer ul:nth-child(3).scrollStep{
+  animation: opacity 4s ease-in-out;
+}
+
+#stepsContainer ul:nth-child(4).scrollStep{
+  animation: opacity 6s ease-in-out;
+}
+
+#stepsContainer ul:nth-child(5).scrollStep{
+  animation: opacity 8s ease-in-out;
+}
+
+#stepsContainer ul:nth-child(6).scrollStep{
+  animation: opacity 10s ease-in-out ;
+}
+
+ @keyframes opacity {
+  0%   { opacity: 0%; }
+  50%   { opacity: 0%; }
+  80% { opacity: 100%; }
+  100% { opacity: 100%; }
+}
+
 
 
 /* Contact
@@ -1010,7 +1039,35 @@ overflow: hidden;
 ================================================== */
 
 #footer{
-  height: 100px;
   background-color: #B0F2B6;
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+#footer ul{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 30px auto;
+}
+
+#footer ul li{
+  list-style-type: none;
+}
+
+#footer ul:nth-child(1) li{
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+#footer ul:nth-child(2) li a{
+  color: rgb(14,14,14);
+  font-size: 25px;
+  margin: 0 20px 0 20px;
+}
+
+#footer ul:nth-child(2) li a :hover{
+  transform: scale(1.5);
 }
 

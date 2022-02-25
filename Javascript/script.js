@@ -254,3 +254,30 @@ window.addEventListener('scroll', () => {
 })
 
 
+// Etapes
+// ==================================================
+
+
+const contactStep = document.querySelector('#stepsContainer ul:nth-child(1)');
+const devis = document.querySelector('#stepsContainer ul:nth-child(2)');
+const echange = document.querySelector('#stepsContainer ul:nth-child(3)');
+const realisation = document.querySelector('#stepsContainer ul:nth-child(4)');
+const validation = document.querySelector('#stepsContainer ul:nth-child(5)');
+const livraison = document.querySelector('#stepsContainer ul:nth-child(6)');
+
+
+window.addEventListener('scroll', () => {
+
+  const { scrollTop, clientHeight } = document.documentElement;
+
+  const topEtapes = etapes.getBoundingClientRect().top;
+
+  if (scrollTop > (scrollTop + topEtapes).toFixed() - clientHeight * 0.8) {
+    contactStep.classList.add('scrollStep');
+    devis.classList.add('scrollStep');
+    echange.classList.add('scrollStep');
+    realisation.classList.add('scrollStep');
+    validation.classList.add('scrollStep');
+    livraison.classList.add('scrollStep');
+  } 
+})
