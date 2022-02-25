@@ -188,10 +188,10 @@ window.addEventListener('scroll', () => {
   } 
 })
 
-// Portfolio
+// Projets
 // ==================================================
 
-const portfolio = document.querySelector('#portfolio');
+const projets = document.querySelector('#projets');
 const services = document.querySelector('#services');
 const etapes = document.querySelector('#etapes');
 const contact = document.querySelector('#contact');
@@ -203,9 +203,9 @@ window.addEventListener('scroll', () => {
 
   const { scrollTop, clientHeight } = document.documentElement;
 
-  const topPortfolio = portfolio.getBoundingClientRect().top;
+  const topProjets = projets.getBoundingClientRect().top;
 
-  if (scrollTop > (scrollTop + topPortfolio).toFixed() - clientHeight * 0.1) {
+  if (scrollTop > (scrollTop + topProjets).toFixed() - clientHeight * 0.1) {
     greenBurger.style.display = "none";
     blackBurger.style.display = "block";
   } else {

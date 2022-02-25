@@ -377,6 +377,7 @@ path{
   transition: transform 1.5s ease-in-out,
   opacity 1.5s ease-in-out;
 }
+
 .slide-in-left.active {
   transform: translateX(0%);
   opacity: 1.5;

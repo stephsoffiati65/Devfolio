@@ -237,6 +237,11 @@
      .project .folio-title {
        margin-top: 100px
    }
+
+   .slide-in-left-dos{
+    transition: none;
+    opacity: 1;
+  }
 }
 
 
@@ -246,10 +251,8 @@
 
 @media (max-width: 1440px){
   
-    .serviceContainer {
-        
-        width: 40%;
-        
+    .serviceContainer {   
+        width: 40%;  
       }      
 }
 
