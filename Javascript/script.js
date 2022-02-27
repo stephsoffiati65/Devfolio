@@ -277,18 +277,20 @@ window.addEventListener('scroll', () => {
 
 const btt = document.querySelector('#btt');
 const about = document.querySelector('#about');
+const footer = document.querySelector('#footer');
 
 window.addEventListener('scroll', () => {
 
   const { scrollTop, clientHeight } = document.documentElement;
 
-  const top = about.getBoundingClientRect().top;
+  const topAbout = about.getBoundingClientRect().top;
 
-  if (scrollTop > (scrollTop + top).toFixed() - clientHeight *0.8) {
+  if (scrollTop > (scrollTop + topAbout).toFixed() - clientHeight *0.8) {
     btt.classList.add('showBtt');
   } else {
     btt.classList.remove('showBtt');
   }
 })
+
 
 
