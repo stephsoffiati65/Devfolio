@@ -138,24 +138,13 @@ window.addEventListener('scroll', () => {
 // TypeWriter
 // ==================================================
 
-const txtAnim = document.querySelector("#typeWriter")
-
-new Typewriter(txtAnim, {
-  loop: true,
-  delay: 80,
-  deleteSpeed: 60,
+let typed = new Typed("#typed", {
+  strings: ['FRONT-END', 'WORDPRESS', 'FREELANCE'],
+  typeSpeed: 120,
+  backSpeed: 60,
+  loop: true
 })
-  .typeString('<strong>FRONT-END</strong>')
-  .pauseFor(300)
-  .deleteChars(9)
-  .typeString('<strong>WORDPRESS</strong>')
-  .pauseFor(300)
-  .deleteChars(9)
-  .typeString('<strong>FREELANCE</strong>')
-  .pauseFor(300)
-  .deleteChars(9)
 
-  .start()
 
 
 // Animation cercles de compétences
@@ -281,3 +270,25 @@ window.addEventListener('scroll', () => {
     livraison.classList.add('scrollStep');
   } 
 })
+
+
+// Bouton Back To Top
+// ==================================================
+
+const btt = document.querySelector('#btt');
+const about = document.querySelector('#about');
+
+window.addEventListener('scroll', () => {
+
+  const { scrollTop, clientHeight } = document.documentElement;
+
+  const top = about.getBoundingClientRect().top;
+
+  if (scrollTop > (scrollTop + top).toFixed() - clientHeight *0.8) {
+    btt.classList.add('showBtt');
+  } else {
+    btt.classList.remove('showBtt');
+  }
+})
+
+

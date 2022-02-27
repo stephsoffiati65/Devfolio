@@ -399,3 +399,15 @@
    }  
 }
 
+
+  /* Bouton Back to top
+================================================== */
+
+@media (max-width: 550px){
+  
+    #btt{
+        height: 30px;
+        width: 30px;
+    } 
+ }
+

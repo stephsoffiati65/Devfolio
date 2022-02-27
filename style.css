@@ -249,7 +249,7 @@ header {
 #halo{
   width: 250px;
   height: 250px;
-  margin: 0 auto 10px auto;
+  margin: 0 auto 20px auto;
   border-radius: 50%;
   box-shadow:
     0 0 8px #fff,
@@ -991,8 +991,6 @@ overflow: hidden;
   100% { opacity: 100%; }
 }
 
-
-
 /* Contact
 ================================================== */
 
@@ -1071,3 +1069,34 @@ overflow: hidden;
   transform: scale(1.5);
 }
 
+/* Boutton Back To Top
+================================================== */
+
+#btt{
+  visibility: hidden;
+  opacity: 0;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 1px solid rgb(14,14,14);
+  background-color: #B0F2B6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 10px;
+  bottom: 20px;
+  cursor: pointer;
+  z-index: 1000;
+  transition: visibility 1s ease-in-out, opacity 1s ease-in-out;
+}
+
+#btt.showBtt{
+  visibility: initial;
+  opacity: 1;
+}
+
+#btt a{
+  color:rgb(14,14,14);
+  font-size: 30px;
+}
