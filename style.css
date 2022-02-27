@@ -877,6 +877,7 @@ overflow: hidden;
   top: 0;
   bottom: 0;
   backface-visibility: hidden;
+  
 }
 .front {
   background: linear-gradient(to right,  #a3e0a8, #79a57d);
@@ -904,10 +905,12 @@ overflow: hidden;
   line-height: 2em;
   letter-spacing: 0.02em;
   padding: 0 3em;
+  font-size: 20px;
+  text-align: justify;
 }
 .back {
   background-color: #ebebeb;
-  transform: rotateX(180deg);
+  transform: rotateX(180deg); 
 }
 .serviceContainer:hover .card {
   transform: rotateX(180deg);
