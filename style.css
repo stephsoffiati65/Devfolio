@@ -805,6 +805,8 @@ overflow: hidden;
 	margin-top: 250px;
 }
 
+
+
 .project .folio-types {
 	margin: 0;
 	padding: 0;
@@ -812,6 +814,23 @@ overflow: hidden;
 	font-family: "poppins", sans-serif;
 	font-size: 20px;
 	color: rgba(255, 255, 255, 0.6);
+}
+
+.visit
+{
+  height: 60px;
+}
+
+.project .folio-types a{
+  padding: 10px;
+  font-size: 10px;
+  letter-spacing: 5px;
+  background: transparent;
+  border: 1px solid #ebebeb;
+}
+
+.project .folio-types a:hover{
+  border: 1px solid #B0F2B6;
 }
 
 .project .folio-item-cell {
@@ -827,8 +846,8 @@ overflow: hidden;
 
 .project:hover .folio-item-cell {
 	left: 0;
- 
 }
+
 
 /* Services
 ================================================== */
