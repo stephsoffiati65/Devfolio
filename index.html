@@ -661,15 +661,15 @@
 
             <!-- form -->
 
-            <form name="contactForm" id="contactForm" method="post">
+            <form action="contact.php" name="contactForm" id="contactForm" method="post">
                 <div>
-                    <input name="contactName" type="text" id="contactName" placeholder="Nom">
+                    <input name="contactName" type="text" id="contactName" placeholder="Nom" required>
                 </div>
                 <div>
-                    <input name="contactEmail" type="email" id="contactEmail" placeholder="Mail">
+                    <input name="contactEmail" type="email" id="contactEmail" placeholder="Mail" required>
                 </div>
                 <div>
-                    <input name="contactSubject" type="text" id="contactSubject" placeholder="Objet">
+                    <input name="contactSubject" type="text" id="contactSubject" placeholder="Objet" required>
                 </div>
                 <div>
                     <textarea name="contactMessage" id="contactMessage" placeholder="Message"></textarea>
@@ -679,6 +679,7 @@
                 </div>
 
             </form> <!-- Form End -->
+
 
             <ul>
                 <li class="grey ">

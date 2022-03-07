@@ -1053,6 +1053,7 @@ overflow: hidden;
   border-bottom: 1px solid #ebebeb;
   background-color: transparent;
   color: #ebebeb;
+  transition: transform 0.5s ease-in-out;
 }
 
 #contactForm textarea{
@@ -1062,6 +1063,7 @@ overflow: hidden;
 #contactForm input:focus, #contactForm textarea:focus{
   outline: none;
   border-bottom: 1px solid #B0F2B6;
+  transform: translateX(-5%);
 }
 
 #contactForm button{
@@ -1069,7 +1071,7 @@ overflow: hidden;
   height: 65px;
   margin-top: 20px;
   background-color: #ebebebc9;
-  font-size: 20px;
+  font-size: 18px;
   font-family: "Poppins";
   font-weight: bold;
   letter-spacing: 10px;
