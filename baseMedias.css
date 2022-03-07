@@ -340,16 +340,23 @@
 /* Contact
 ================================================== */
 
-@media (max-width: 1300px){
+@media (max-width: 1600px){
   
-    #contacts{
+    #contacts ul{
         display: block;
-        text-align: center;
-      } 
+        text-align: center;   
+    } 
       
-      #contacts ul li p{
-        width: 40%;
-      }
+    #contacts ul li p{
+    width: 40%;
+    margin-bottom: 50px;
+    }
+
+    #contactForm {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 50px;
+    }
   }
 
 
@@ -364,21 +371,22 @@
         margin: auto;
         margin-bottom: 50px;
       }
+
   }
 
   @media (max-width: 550px){
   
     #contacts ul li p{
-        width: 80%;
+        width: 90%;
       }
   }
 
-  @media (max-width: 400px){
+  /* @media (max-width: 400px){
   
     #contacts ul li img{
         width: 80px;
     }
-  }
+  } */
 
 
   /* Footer
