@@ -109,6 +109,11 @@ a {
   color: #B0F2B6;
 }
 
+.underGreen{
+  text-decoration: underline #B0F2B6;
+  color: #B0F2B6;
+}
+
 .none{
   display: none;
 }
@@ -1091,6 +1096,12 @@ overflow: hidden;
   transform: scale(1.5);
 }
 
+#linkMention{
+  color: rgb(14,14,14);
+  font-family:Helvetica;
+  font-weight: 500;
+}
+
 /* Boutton Back To Top
 ================================================== */
 
@@ -1119,6 +1130,60 @@ overflow: hidden;
 }
 
 #btt a{
+  color:rgb(14,14,14);
+  font-size: 30px;
+}
+
+
+/* Mentions légales
+================================================== */
+
+#CTAM{
+  padding-bottom: 500px;
+}
+
+#mentionsLegales{
+ background-color: rgb(14,14,14);
+ font-size: 25px;
+ padding-bottom: 50px;
+}
+
+#mentionsLegales .paragraph{
+margin-top: 0;
+text-align: justify;
+width: 80%;
+margin: auto;
+}
+
+.underGreen{
+  text-decoration: underline #B0F2B6;
+}
+
+#bttM{
+  visibility: hidden;
+  opacity: 0;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 1px solid rgb(14,14,14);
+  background: linear-gradient(to right,  #a3e0a8, #79a57d);;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 10px;
+  bottom: 20px;
+  cursor: pointer;
+  z-index: 1000;
+  transition: visibility 1s ease-in-out, opacity 1s ease-in-out;
+}
+
+#bttM.showBttM{
+  visibility: initial;
+  opacity: 1;
+}
+
+#bttM a{
   color:rgb(14,14,14);
   font-size: 30px;
 }

@@ -276,7 +276,9 @@ window.addEventListener('scroll', () => {
 // ==================================================
 
 const btt = document.querySelector('#btt');
+const bttM = document.querySelector('#bttM');
 const about = document.querySelector('#about');
+const mentionsLegales = document.querySelector('#mentionsLegales');
 const footer = document.querySelector('#footer');
 
 window.addEventListener('scroll', () => {
@@ -289,6 +291,20 @@ window.addEventListener('scroll', () => {
     btt.classList.add('showBtt');
   } else {
     btt.classList.remove('showBtt');
+  }
+})
+
+
+window.addEventListener('scroll', () => {
+
+  const { scrollTop, clientHeight } = document.documentElement;
+
+  const topMentions = mentionsLegales.getBoundingClientRect().top;
+
+  if (scrollTop > (scrollTop + topMentions).toFixed() - clientHeight *0.8) {
+    bttM.classList.add('showBttM');
+  } else {
+    bttM.classList.remove('showBttM');
   }
 })
 
