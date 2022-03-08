@@ -138,7 +138,7 @@ window.addEventListener('scroll', () => {
 // TypeWriter
 // ==================================================
 
-let typed = new Typed("#typed", {
+let typedIndex = new Typed("#typedIndex", {
   strings: ['FRONT-END', 'WORDPRESS', 'FREELANCE'],
   typeSpeed: 120,
   backSpeed: 60,

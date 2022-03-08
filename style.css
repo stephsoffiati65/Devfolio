@@ -247,10 +247,6 @@ header {
   padding-top: 4.5%;
 }
 
-#logo{
-  width: 250px;
-}
-
 #halo{
   width: 250px;
   height: 250px;
@@ -331,6 +327,7 @@ path{
 }
 
 #logo {
+  width: 250px;
   animation: opacityLogo 6s ease-in-out;
 }
 
@@ -1236,7 +1233,23 @@ margin: auto;
   font-size: 30px;
 }
 
+/* Message envoyé
+================================================== */
+
+#typedMessage{
+  color: #B0F2B6;
+}
+
+#reponse{
+  font-size: 30px; 
+}
+
+#h2Reponse{
+  transition: text-decoration 3s ease-in-out;
+} 
 
 
-
-
+@keyframes surligne {
+  0%   { text-decoration: none; }
+  100% { text-decoration: underline; }
+}

@@ -1,28 +1,13 @@
 
-
-
-
-
-
-
-// Bouton Back To Top
+// TypeWriter
 // ==================================================
 
-const bttM = document.querySelector('#bttM');
-const mentionsLegales = document.querySelector('#mentionsLegales');
-
-window.addEventListener('scroll', () => {
-
-  const { scrollTop, clientHeight } = document.documentElement;
-
-  const topMentions = mentionsLegales.getBoundingClientRect().top;
-
-  if (scrollTop > (scrollTop + topMentions).toFixed() - clientHeight *0.8) {
-    bttM.classList.add('showBttM');
-  } else {
-    bttM.classList.remove('showBttM');
-  }
-})
+let typedMessage = new Typed("#typedMessage", {
+    strings: ['&nbsp;  dès que possible...', '&nbsp;  sous 24h... au pire... 48h...<br> Mais...  je vous répondrai ☺'],
+    typeSpeed: 120,
+    backSpeed: 60,
+  })
+  
 
 
 
