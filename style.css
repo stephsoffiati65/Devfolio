@@ -1021,6 +1021,7 @@ overflow: hidden;
 
 #contact{
   background-color: rgb(14,14,14);
+  z-index: 1000;
 }
 
 
