@@ -111,30 +111,6 @@ window.addEventListener('scroll', () => {
     }
 })
 
-const slidingRight = document.querySelector('.slide-in-right');
-
-window.addEventListener('scroll', () => {
-
-    const {scrollTop, clientHeight} = document.documentElement;
-    const topRight = slidingRight.getBoundingClientRect().top;
-
-    if(scrollTop > (scrollTop + topRight).toFixed() - clientHeight * 0.8){
-        slidingRight.classList.add('active')
-    }
-})
-
-const slidingRightDos = document.querySelector('.slide-in-right-dos');
-
-window.addEventListener('scroll', () => {
-
-    const {scrollTop, clientHeight} = document.documentElement;
-    const topRight = slidingRightDos.getBoundingClientRect().top;
-
-    if(scrollTop > (scrollTop + topRight).toFixed() - clientHeight * 0.8){
-        slidingRightDos.classList.add('active')
-    }
-})
-
 // TypeWriter
 // ==================================================
 
@@ -293,7 +269,5 @@ window.addEventListener('scroll', () => {
     btt.classList.remove('showBtt');
   }
 })
-
-
 
 
