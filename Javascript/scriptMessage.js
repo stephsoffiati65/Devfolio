@@ -1,8 +1,8 @@
 
-// Animation SVG
-// ==================================================
 
-const path = document.querySelector('path');
+
+
+
 
 
 // Bouton Back To Top

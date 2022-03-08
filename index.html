@@ -655,24 +655,36 @@
         <hr class="hrTitle ">
 
         <div id="contacts">
-            <!-- <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2914.62463602588!2d0.14879121570923257!3d43.07036159793984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a831d8f5f7a0ed%3A0x7ca1793289971bcb!2s17%20Rue%20de%20l&#39;%C3%89galit%C3%A9%2C%2065200%20Bagn%C3%A8res-de-Bigorre!5e0!3m2!1sfr!2sfr!4v1645638582915!5m2!1sfr!2sfr"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
 
-            <!-- form -->
+            <form action="https://formsubmit.co/soffiati.dev@gmail.com" method="POST" name="contactForm"
+                id="contactForm">
 
-            <form action="contact.php" name="contactForm" id="contactForm" method="post">
+                <!-- Honeypot -->
+                <input type="text" name="_honey" style="display: none;">
+
+                <!-- Captcha -->
+                <input type="hidden" name="_captcha" value="false">
+
+                <input type="hidden" name="_next" value="">
+
+            
                 <div>
-                    <input name="contactName" type="text" id="contactName" placeholder="Nom" required>
+                    <input name="Nom" type="text" placeholder="Nom" required>
                 </div>
                 <div>
-                    <input name="contactEmail" type="email" id="contactEmail" placeholder="Mail" required>
+                    <input name="Prénom" type="text" placeholder="Prénom" required>
                 </div>
                 <div>
-                    <input name="contactSubject" type="text" id="contactSubject" placeholder="Objet" required>
+                    <input name="Téléphone" type="number" placeholder="Numéro de téléphone (optionnel)">
                 </div>
                 <div>
-                    <textarea name="contactMessage" id="contactMessage" placeholder="Message"></textarea>
+                    <input name="Mail" type="email" id="contactEmail" placeholder="Mail" required>
+                </div>
+                <div>
+                    <input name="Objet" type="text" id="contactSubject" placeholder="Objet" required>
+                </div>
+                <div>
+                    <textarea name="Message" id="contactMessage" placeholder="Message"></textarea>
                 </div>
                 <div>
                     <button>ENVOYER</button>
@@ -685,14 +697,15 @@
                 <li class="grey ">
                     <img src="images/adresse.png" alt="adresse postale">
                     <h3>ADRESSE</h3>
-                    <p class="classic"><a href="https://goo.gl/maps/UiFrcaTU4UQAQQ1N9" target="_blank"> Itinéraire</a></p>
+                    <p class="classic"><a href="https://goo.gl/maps/UiFrcaTU4UQAQQ1N9" target="_blank"> Itinéraire</a>
+                    </p>
                 </li>
                 <li class="grey">
                     <img src="images/mail.png" alt="adresse mail">
                     <h3>MAIL</h3>
                     <p class="classic"><a href="mailto:soffiati.dev@gmail.com">soffiati.dev@gmail.com</a></p>
                 </li>
-            
+
                 <li class="grey">
                     <img src="images/phone-call.png" alt="téléphone">
                     <h3>TÉLÉPHONE</h3>
