@@ -1025,10 +1025,6 @@ overflow: hidden;
 }
 
 
-#contacts iframe {
-  margin-bottom: 50px;
-}
-
 #contactForm{
   width: 800px;
   margin: 0px auto 50px auto;
@@ -1073,6 +1069,11 @@ overflow: hidden;
   font-family: "Poppins";
   font-weight: bold;
   letter-spacing: 10px;
+  cursor: pointer;
+}
+
+#contactForm button:hover{
+  background-color: #B0F2B6;
 }
 
 #contacts ul{
