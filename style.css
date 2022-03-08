@@ -154,7 +154,7 @@ a {
   right: 0;
   bottom: 0;
   height: 100vh;
-  transform: translateY(-100%);
+  transform: translateY(-200%);
   transition: transform 1s;
   list-style: none;
   padding-top: 60px;
@@ -1072,7 +1072,7 @@ overflow: hidden;
 }
 
 #contactForm button:hover{
-  background-color: #B0F2B6;
+  background: linear-gradient(to right,  #a3e0a8, #475f49);;
 }
 
 #contacts ul{
@@ -1254,3 +1254,6 @@ margin: auto;
   0%   { text-decoration: none; }
   100% { text-decoration: underline; }
 }
+
+
+
