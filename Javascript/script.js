@@ -268,38 +268,6 @@ window.addEventListener('scroll', () => {
   }
 })
 
-// Compétences
-
-const h2Competences = document.querySelector('#competences h2');
-
-const competences = document.querySelector('#competences');
-
-
-window.addEventListener('scroll', () => {
-
-  const { scrollTop, clientHeight } = document.documentElement;
-
-  const topComp = competences.getBoundingClientRect().top;
-
-  if (scrollTop > (scrollTop + topComp).toFixed() - clientHeight *0.8) {
-    h2Competences.classList.add('tracking-in-contract');
-  }
-})
-
-// Projets
-
-const h2Projets = document.querySelector('#projets h2');
-
-window.addEventListener('scroll', () => {
-
-  const { scrollTop, clientHeight } = document.documentElement;
-
-  const topProjets = projets.getBoundingClientRect().top;
-
-  if (scrollTop > (scrollTop + topProjets).toFixed() - clientHeight *0.8) {
-    h2Projets.classList.add('tracking-in-contract');
-  }
-})
 
 // Services
 
@@ -349,6 +317,8 @@ window.addEventListener('scroll', () => {
 
   if (scrollTop > (scrollTop + topAbout).toFixed() - clientHeight *0.8) {
     btt.classList.add('showBtt');
+  } else {
+    btt.classList.remove('showBtt');
   }
 })
 
