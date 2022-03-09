@@ -247,13 +247,97 @@ window.addEventListener('scroll', () => {
   } 
 })
 
+// Animation H2
+// ==================================================
+
+// About
+
+const h2About = document.querySelector('#about h2');
+
+const about = document.querySelector('#about');
+
+
+window.addEventListener('scroll', () => {
+
+  const { scrollTop, clientHeight } = document.documentElement;
+
+  const topAbout = about.getBoundingClientRect().top;
+
+  if (scrollTop > (scrollTop + topAbout).toFixed() - clientHeight *0.8) {
+    h2About.classList.add('tracking-in-contract');
+  }
+})
+
+// Compétences
+
+const h2Competences = document.querySelector('#competences h2');
+
+const competences = document.querySelector('#competences');
+
+
+window.addEventListener('scroll', () => {
+
+  const { scrollTop, clientHeight } = document.documentElement;
+
+  const topComp = competences.getBoundingClientRect().top;
+
+  if (scrollTop > (scrollTop + topComp).toFixed() - clientHeight *0.8) {
+    h2Competences.classList.add('tracking-in-contract');
+  }
+})
+
+// Projets
+
+const h2Projets = document.querySelector('#projets h2');
+
+window.addEventListener('scroll', () => {
+
+  const { scrollTop, clientHeight } = document.documentElement;
+
+  const topProjets = projets.getBoundingClientRect().top;
+
+  if (scrollTop > (scrollTop + topProjets).toFixed() - clientHeight *0.8) {
+    h2Projets.classList.add('tracking-in-contract');
+  }
+})
+
+// Services
+
+const h2Services = document.querySelector('#services h2');
+
+window.addEventListener('scroll', () => {
+
+  const { scrollTop, clientHeight } = document.documentElement;
+
+  const topServices = services.getBoundingClientRect().top;
+
+  if (scrollTop > (scrollTop + topServices).toFixed() - clientHeight *0.8) {
+    h2Services.classList.add('tracking-in-contract');
+  }
+})
+
+// Contact
+
+const h2Contact = document.querySelector('#contact h2');
+
+
+window.addEventListener('scroll', () => {
+
+  const { scrollTop, clientHeight } = document.documentElement;
+
+  const topContact = contact.getBoundingClientRect().top;
+
+  if (scrollTop > (scrollTop + topContact).toFixed() - clientHeight *0.8) {
+    h2Contact.classList.add('tracking-in-contract');
+  }
+})
+
 
 // Bouton Back To Top
 // ==================================================
 
 const btt = document.querySelector('#btt');
 const bttM = document.querySelector('#bttM');
-const about = document.querySelector('#about');
 const mentionsLegales = document.querySelector('#mentionsLegales');
 const footer = document.querySelector('#footer');
 
@@ -265,8 +349,6 @@ window.addEventListener('scroll', () => {
 
   if (scrollTop > (scrollTop + topAbout).toFixed() - clientHeight *0.8) {
     btt.classList.add('showBtt');
-  } else {
-    btt.classList.remove('showBtt');
   }
 })
 

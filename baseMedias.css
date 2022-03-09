@@ -379,15 +379,11 @@
     #contacts ul li p{
         width: 90%;
       }
+
+      #contactForm button{
+        background: linear-gradient(to right,  #a3e0a8, #475f49);;
+      }
   }
-
-  /* @media (max-width: 400px){
-  
-    #contacts ul li img{
-        width: 80px;
-    }
-  } */
-
 
   /* Footer
 ================================================== */
