@@ -235,11 +235,8 @@ a {
 ================================================== */
 
 header {
-	background: url(images/intro-bg.jpg) no-repeat center ;
+	background: url(https://stephsoffiati65.github.io/Devfolio/images/intro-bg.jpg) no-repeat center ;
 	background-size: cover;
-  filter: blur(0.5);
-	width: 100%;
-	height: 100%;
 	text-align: center;
 }
 
@@ -366,6 +363,8 @@ header {
   width: 80%;
   margin: 55px auto 0 auto;
 }
+
+
 
 /* Animation SVG Nom prénom*/
 
@@ -931,6 +930,7 @@ overflow: hidden;
 .card {
   transform-style: preserve-3d;
   height: 100%;
+  min-height: 230px;
   width: 100%;
   transition: 0.5s ease;
 }
@@ -975,7 +975,7 @@ overflow: hidden;
 
 .content p {
   font-size: 14px;
-  line-height: 2em;
+  line-height: 1.5em;
   letter-spacing: 0.02em;
   padding: 0 3em;
   font-size: 20px;
@@ -1466,8 +1466,17 @@ width: 80%;
 margin: auto;
 }
 
-.underGreen{
-  text-decoration: underline #B0F2B6;
+#mentionsLegales h2, #mentionsLegales h3{
+  color:  #B0F2B6;
+  font-size: 30px;
+  margin-bottom: 50px;
+  text-align: center;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#mentionsLegales h3{
+  margin-top: 50px;
 }
 
 #bttM{
@@ -1551,4 +1560,15 @@ margin: auto;
   }
 }
 
+/* Carte de visite
+================================================== */
+
+#name2{
+  padding-top: 4.5%;
+  height: 880px
+}
+
+#visite{
+  font-size: 40px;
+}
 

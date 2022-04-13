@@ -8,6 +8,23 @@
     }
 }
 
+@media screen and (min-width: 1200px) and (max-width: 1300px){
+
+    #burger li a{
+        font-size: 40px; 
+    }
+
+    #burger li{
+        margin: 10px auto;
+    }
+
+    .menu li a:before{
+        font-size: 145px;
+    }
+      
+}
+
+
 @media (max-width: 500px){
     #burger li a{
         font-size: 40px; 
@@ -16,6 +33,59 @@
 
 /* Header
 ================================================== */
+
+@media screen and (min-width: 1200px) and (max-width: 1300px){
+
+    header {
+      height: 590px;
+    }
+
+    #halo{
+        width: 150px;
+        height: 150px;  
+    }
+
+    #logo {
+        width: 150px;
+    }
+
+    h1 svg{
+        width: 450px
+    }
+
+    #info p span{
+        font-size: 20px;
+    }
+
+    #CTA{
+        justify-content: space-between;
+    }
+
+    #CTA a{
+        font-size: 10px;
+    }
+
+    #networks{
+        display: flex;
+        justify-content: space-around;
+        margin: auto;
+        margin-top: 120px;
+        width: 20%;
+        min-width: 400px;
+        text-align: center;
+    }
+
+    #networks li a{   
+        font-size: 25px;  
+    }
+
+    .hrHead {
+        margin: 15px auto 0 auto;
+    }
+      
+}
+
+
 @media (max-width: 850px){
     .jumpDev{
       display: block;
@@ -271,6 +341,14 @@
       }      
 }
 
+@media (max-width: 1200px){
+  
+         #stepsContainer{ 
+    padding: 50px 0px 0px 0px;
+  } 
+} 
+
+
 @media (max-width: 1000px){
   
     .serviceContainer {
@@ -451,3 +529,28 @@
         font-size: 18px;
     } 
  }
+
+ /* Mentions Légales
+================================================== */
+
+@media (max-width: 1400px){
+
+    #mentionsLegales h2, #mentionsLegales h3{
+        font-size: 25px; 
+    }
+
+    #mentionsLegales{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 1200px){
+
+    #mentionsLegales h2, #mentionsLegales h3{
+        font-size: 20px; 
+    }
+
+    #mentionsLegales{
+        font-size: 18px;
+    }
+}
