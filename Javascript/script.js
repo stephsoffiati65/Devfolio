@@ -90,12 +90,12 @@ const slidingLeft = document.querySelector('.slide-in-left');
 
 window.addEventListener('scroll', () => {
 
-    const {scrollTop, clientHeight} = document.documentElement;
-    const topLeft = slidingLeft.getBoundingClientRect().top;
+  const { scrollTop, clientHeight } = document.documentElement;
+  const topLeft = slidingLeft.getBoundingClientRect().top;
 
-    if(scrollTop > (scrollTop + topLeft).toFixed() - clientHeight * 0.8){
-        slidingLeft.classList.add('active')
-    }
+  if (scrollTop > (scrollTop + topLeft).toFixed() - clientHeight * 0.8) {
+    slidingLeft.classList.add('active')
+  }
 })
 
 const slidingLeftDos = document.querySelector('.slide-in-left-dos');
@@ -103,12 +103,12 @@ const slidingLeftDos = document.querySelector('.slide-in-left-dos');
 
 window.addEventListener('scroll', () => {
 
-    const {scrollTop, clientHeight} = document.documentElement;
-    const topLeft = slidingLeftDos.getBoundingClientRect().top;
+  const { scrollTop, clientHeight } = document.documentElement;
+  const topLeft = slidingLeftDos.getBoundingClientRect().top;
 
-    if(scrollTop > (scrollTop + topLeft).toFixed() - clientHeight * 0.8){
-      slidingLeftDos.classList.add('active')
-    }
+  if (scrollTop > (scrollTop + topLeft).toFixed() - clientHeight * 0.8) {
+    slidingLeftDos.classList.add('active')
+  }
 })
 
 // TypeWriter
@@ -150,7 +150,7 @@ window.addEventListener('scroll', () => {
     java.classList.add('scroll');
     node.classList.add('scroll');
     react.classList.add('scroll');
-  } 
+  }
 })
 
 // Projets
@@ -244,7 +244,7 @@ window.addEventListener('scroll', () => {
     realisation.classList.add('scrollStep');
     validation.classList.add('scrollStep');
     livraison.classList.add('scrollStep');
-  } 
+  }
 })
 
 // Animation H2
@@ -263,7 +263,7 @@ window.addEventListener('scroll', () => {
 
   const topAbout = about.getBoundingClientRect().top;
 
-  if (scrollTop > (scrollTop + topAbout).toFixed() - clientHeight *0.8) {
+  if (scrollTop > (scrollTop + topAbout).toFixed() - clientHeight * 0.8) {
     h2About.classList.add('tracking-in-contract');
   }
 })
@@ -279,7 +279,7 @@ window.addEventListener('scroll', () => {
 
   const topServices = services.getBoundingClientRect().top;
 
-  if (scrollTop > (scrollTop + topServices).toFixed() - clientHeight *0.8) {
+  if (scrollTop > (scrollTop + topServices).toFixed() - clientHeight * 0.8) {
     h2Services.classList.add('tracking-in-contract');
   }
 })
@@ -295,7 +295,7 @@ window.addEventListener('scroll', () => {
 
   const topContact = contact.getBoundingClientRect().top;
 
-  if (scrollTop > (scrollTop + topContact).toFixed() - clientHeight *0.8) {
+  if (scrollTop > (scrollTop + topContact).toFixed() - clientHeight * 0.8) {
     h2Contact.classList.add('tracking-in-contract');
   }
 })
@@ -315,7 +315,7 @@ window.addEventListener('scroll', () => {
 
   const topAbout = about.getBoundingClientRect().top;
 
-  if (scrollTop > (scrollTop + topAbout).toFixed() - clientHeight *0.8) {
+  if (scrollTop > (scrollTop + topAbout).toFixed() - clientHeight * 0.8) {
     btt.classList.add('showBtt');
   } else {
     btt.classList.remove('showBtt');
